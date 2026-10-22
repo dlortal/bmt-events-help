@@ -1,0 +1,5 @@
+[
+  { "slug": "getting-started", "title": "Getting started", "blurb": "Signing in, your account and the basics." },
+  { "slug": "running-an-event", "title": "Running an event", "blurb": "Guest lists, invitations, tickets and check-in on the night." },
+  { "slug": "troubleshooting", "title": "Troubleshooting", "blurb": "When something does not work as expected." }
+]

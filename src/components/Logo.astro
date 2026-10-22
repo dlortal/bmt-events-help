@@ -1,0 +1,12 @@
+---
+// Interim type-only lockup. Replace with the supplied BAFTA Media Technology master SVG
+// (positive on light, negative on dark) once brand files arrive. Do not redraw the mask.
+import { site } from "../../site.config";
+---
+<a class="brand" href="/" aria-label={`${site.org} ${site.name} home`}>
+  <span class="lockup">
+    <span class="word">BAFTA</span>
+    <span class="sub">Media Technology</span>
+  </span>
+  <span class="site">{site.name}</span>
+</a>

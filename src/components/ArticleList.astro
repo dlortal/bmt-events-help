@@ -1,0 +1,24 @@
+---
+import type { CollectionEntry } from "astro:content";
+interface Props { articles: CollectionEntry<"articles">[] }
+const { articles } = Astro.props;
+const groups = new Map<string, CollectionEntry<"articles">[]>();
+for (const a of articles) {
+  const k = a.data.subcategory ?? "";
+  if (!groups.has(k)) groups.set(k, []);
+  groups.get(k)!.push(a);
+}
+---
+{[...groups].map(([sub, arts]) => (
+  <>
+    {sub && <h3 class="sub">{sub}</h3>}
+    <ul class="article-list">
+      {arts.map((a) => (
+        <li>
+          <a href={`/help-articles/${a.id}/`}>{a.data.title}</a>
+          {a.data.summary && <span class="summary">{a.data.summary}</span>}
+        </li>
+      ))}
+    </ul>
+  </>
+))}

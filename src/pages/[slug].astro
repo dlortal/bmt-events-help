@@ -1,0 +1,24 @@
+---
+import { render } from "astro:content";
+import Base from "../layouts/Base.astro";
+import Crumbs from "../components/Crumbs.astro";
+import { allPages, fmt } from "../lib/content";
+export async function getStaticPaths() {
+  return (await allPages()).map((p) => ({ params: { slug: p.id }, props: { page: p } }));
+}
+const { page } = Astro.props;
+const { Content } = await render(page);
+---
+<Base title={page.data.title} description={page.data.summary}>
+  <div class="wrap">
+    <Crumbs items={[["Home", "/"], [page.data.title]]} />
+    <div class="article-layout">
+      <article class="article" data-pagefind-body>
+        <h1 class="display">{page.data.title}</h1>
+        {page.data.summary && <p class="descriptor">{page.data.summary}</p>}
+        <div class="prose"><Content /></div>
+        {page.data.updated && <p class="updated">Updated {fmt(page.data.updated)}</p>}
+      </article>
+    </div>
+  </div>
+</Base>

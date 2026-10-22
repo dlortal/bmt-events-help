@@ -1,0 +1,13 @@
+---
+import { site } from "../../site.config";
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap">
+    <ul>
+      {site.nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+      {site.footerLinks.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+    </ul>
+    <p>&copy; {year} British Academy of Film and Television Arts</p>
+  </div>
+</footer>

@@ -3,10 +3,20 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "check": "astro check || true",
+    "deploy": "npm run build && wrangler deploy",
     "import": "node scripts/wp-import.mjs"
   },
   "dependencies": {
+    "astro": "^5.18.2",
     "fast-xml-parser": "4.5.0",
+    "pagefind": "^1.5.2",
     "turndown": "7.2.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.151.3"
   }
 }

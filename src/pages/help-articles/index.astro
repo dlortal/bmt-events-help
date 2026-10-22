@@ -1,0 +1,26 @@
+---
+import Base from "../../layouts/Base.astro";
+import Crumbs from "../../components/Crumbs.astro";
+import ArticleList from "../../components/ArticleList.astro";
+import { topCategories, allArticles } from "../../lib/content";
+const articles = await allArticles();
+---
+<Base title="Help articles">
+  <div class="wrap">
+    <Crumbs items={[["Home", "/"], ["Help articles"]]} />
+    <header class="page-head">
+      <h1 class="display">Help articles</h1>
+      <p class="descriptor">{articles.length} articles in {topCategories.length} sections.</p>
+    </header>
+    {topCategories.map((c) => {
+      const arts = articles.filter((a) => a.data.category === c.slug);
+      return arts.length ? (
+        <section class="cat-block">
+          <h2 class="display"><a href={`/help-articles-category/${c.slug}/`} style="text-decoration:none">{c.title}</a></h2>
+          {c.blurb && <p class="blurb">{c.blurb}</p>}
+          <ArticleList articles={arts} />
+        </section>
+      ) : null;
+    })}
+  </div>
+</Base>

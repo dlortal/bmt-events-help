@@ -1,0 +1,14 @@
+name = "bmt-events-help"
+compatibility_date = "2026-10-01"
+
+# Static site served by Cloudflare Workers Static Assets. No Worker script is needed yet;
+# _headers and _redirects in public/ are honoured by the assets layer.
+[assets]
+directory = "./dist"
+not_found_handling = "404-page"
+html_handling = "auto-trailing-slash"
+
+# Custom domain is attached once DNS for bmt.bafta.org is in this Cloudflare account:
+# [[routes]]
+# pattern = "events-help.bmt.bafta.org"
+# custom_domain = true

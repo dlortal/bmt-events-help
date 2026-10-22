@@ -1,0 +1,23 @@
+---
+import Base from "../layouts/Base.astro";
+import Crumbs from "../components/Crumbs.astro";
+---
+<Base title="Search">
+  <div class="wrap">
+    <Crumbs items={[["Home", "/"], ["Search"]]} />
+    <header class="page-head"><h1 class="display">Search</h1></header>
+    <div class="search-page">
+      <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+      <div id="search"></div>
+      <script is:inline src="/pagefind/pagefind-ui.js"></script>
+      <script is:inline>
+        window.addEventListener("DOMContentLoaded", () => {
+          const q = new URLSearchParams(location.search).get("q") || "";
+          if (!window.PagefindUI) { document.getElementById("search").textContent = "Search is available once the site is built."; return; }
+          new PagefindUI({ element: "#search", showSubResults: true, showImages: false, resetStyles: false });
+          if (q) { const i = document.querySelector("#search input"); if (i) { i.value = q; i.dispatchEvent(new Event("input", { bubbles: true })); } }
+        });
+      </script>
+    </div>
+  </div>
+</Base>
