@@ -1,0 +1,12 @@
+{
+  "name": "bmt-events-help",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import": "node scripts/wp-import.mjs"
+  },
+  "dependencies": {
+    "fast-xml-parser": "4.5.0",
+    "turndown": "7.2.0"
+  }
+}
