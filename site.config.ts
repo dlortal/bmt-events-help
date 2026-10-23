@@ -29,4 +29,10 @@ export const site = {
     { title: "BAFTA Tech", text: "BAFTA Media Technology (BMT) is the research and development arm of BAFTA that exists to solve workflow management challenges and provide innovative solutions not only for BAFTA but also for all connected industries. We inspire and deliver excellence in like-minded organisations via products that simplify, streamline and improve new and ongoing initiatives." },
   ],
   copyright: "BAFTA Media Technology",
+  smallprint: "BAFTA Media Technology is a registered company. No. 06226648",
+  legalLinks: [
+    { label: "Privacy Policy", href: "https://bmt.bafta.org/privacy-policy/" },
+    { label: "Terms of Use", href: "https://bmt.bafta.org/terms-of-use/" },
+  ],
+  themeColor: "#101010",
 };

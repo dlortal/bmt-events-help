@@ -6,9 +6,9 @@ Built to the BAFTA brand guidelines (September 2023) with Astro and hosted on a 
 
 ## Status
 
-Content imported from the WordPress export of 23 October 2026 (57 articles in 10 sections, one draft page). Images are pending: the one image the articles reference is listed in `content-import/images.txt` and will be added from the uploads backup. Logo is the BMT lockup used on bmt.bafta.org.
+Content imported from the WordPress export of 23 October 2026 (57 articles in 10 sections, one draft page). The single referenced image is in place: the one image the articles reference is listed in `content-import/images.txt` and will be added from the uploads backup. Logo is the BMT lockup used on bmt.bafta.org.
 
-See [docs/DEPLOY.md](docs/DEPLOY.md) for Cloudflare setup, custom domains and moving accounts.
+See [docs/DEPLOY.md](docs/DEPLOY.md) for Cloudflare setup, custom domains and moving accounts, and [docs/LAUNCH.md](docs/LAUNCH.md) for the launch checklist.
 
 ## Fonts
 

@@ -7,5 +7,5 @@ export default defineConfig({
   output: "static",
   trailingSlash: "always",
   build: { format: "directory" },
-  integrations: [sitemap({ filter: (page) => !page.includes("/search/") })],
+  integrations: site.indexable === false ? [] : [sitemap({ filter: (page) => new URL(page).pathname !== "/search/" })],
 });

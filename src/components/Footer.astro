@@ -1,5 +1,5 @@
 ---
-// Footer structure and copy follow the Nucleus Help WordPress site: menu row, two description columns, copyright.
+// Footer structure follows the original help sites: menu row, description columns, copyright and company details.
 import { site } from "../../site.config";
 const year = new Date().getFullYear();
 ---
@@ -23,7 +23,10 @@ const year = new Date().getFullYear();
   </div>
   <div class="footer-bottom">
     <div class="wrap">
-      <p>&copy; {year} <a href={site.websiteUrl} target="_blank" rel="noopener">{site.copyright}</a></p>
+      <p>&copy; {year} <a href={site.websiteUrl} target="_blank" rel="noopener">{site.copyright}</a> &middot; {site.smallprint}</p>
+      <ul>
+        {site.legalLinks.map((n) => <li><a href={n.href} target="_blank" rel="noopener">{n.label}</a></li>)}
+      </ul>
     </div>
   </div>
 </footer>

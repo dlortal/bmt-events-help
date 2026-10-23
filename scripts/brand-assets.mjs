@@ -5,6 +5,7 @@ import { chromium } from "playwright";
 import { readFileSync } from "node:fs";
 import { site } from "../site.config.ts";
 
+const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const logo = readFileSync("public/logo.png").toString("base64");
 const favicon = readFileSync("public/favicon.svg", "utf8");
 const font = (f) => readFileSync(`public/fonts/${f}`).toString("base64");
@@ -17,7 +18,7 @@ const css = `
 h1{font-weight:100;font-size:92px;letter-spacing:.02em;text-transform:uppercase;line-height:1}
 p{font-weight:400;font-size:30px;color:rgba(255,255,255,.72);max-width:900px;line-height:1.35;margin-top:22px}
 img{width:300px;display:block}`;
-const html = `<style>${css}</style><div class="card"><img src="data:image/png;base64,${logo}"><div><div class="rule"></div><h1>${site.name}</h1><p>${site.description}</p></div></div>`;
+const html = `<style>${css}</style><div class="card"><img src="data:image/png;base64,${logo}"><div><div class="rule"></div><h1>${esc(site.name)}</h1><p>${esc(site.description)}</p></div></div>`;
 
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
