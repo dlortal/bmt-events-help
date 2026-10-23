@@ -275,3 +275,10 @@ details[open] summary::after { content: "\2212"; }
 .pagefind-ui mark { background: #f1dc93; color: #000; }
 .pagefind-ui .pagefind-ui__search-input { border: 2px solid var(--fg-strong); font-weight: 400; }
 .pagefind-ui .pagefind-ui__search-input::placeholder { color: var(--muted); opacity: 1; }
+.pagefind-ui .pagefind-ui__form { position: relative; }
+.pagefind-ui .pagefind-ui__search-clear { position: absolute; top: 0; bottom: 0; right: 10px; height: max-content; margin: auto 0; padding: 8px 14px; border: 0; border-radius: var(--radius); background: transparent; color: var(--muted); font: 500 .9375rem var(--display); line-height: 1.2; cursor: pointer; }
+.pagefind-ui .pagefind-ui__search-clear:hover, .pagefind-ui .pagefind-ui__search-clear:focus-visible { background: var(--grey); color: var(--fg-strong); }
+.pagefind-ui .pagefind-ui__search-input { padding-right: 90px; }
+.pagefind-ui .pagefind-ui__result-link { color: var(--fg-strong); font-weight: 500; }
+.pagefind-ui .pagefind-ui__result-excerpt { color: var(--fg); }
+.pagefind-ui .pagefind-ui__message { color: var(--muted); font-weight: 400; }
