@@ -4,6 +4,7 @@ import { site } from "../../site.config";
 import { topCategories, allArticles } from "../lib/content";
 const articles = await allArticles();
 const count = (slug: string) => articles.filter((a) => a.data.category === slug).length;
+const shown = topCategories.filter((c) => count(c.slug) > 0);
 ---
 <Base>
   <section class="hero">
@@ -22,7 +23,7 @@ const count = (slug: string) => articles.filter((a) => a.data.category === slug)
     <div class="wrap">
       <p class="eyebrow">Browse by topic</p>
       <div class="grid">
-        {topCategories.map((c) => (
+        {shown.map((c) => (
           <a class="card" href={`/help-articles-category/${c.slug}/`}>
             <h3>{c.title}</h3>
             {c.blurb && <p>{c.blurb}</p>}
