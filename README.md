@@ -6,7 +6,7 @@ Built to the BAFTA brand guidelines (September 2023) with Astro and hosted on a 
 
 ## Status
 
-Template with example content, in BAFTA brand with a purple accent. Waiting on the WordPress export and the BAFTA Media Technology logo files.
+Content imported from the WordPress export of 23 October 2026. Images are still to be copied into `public/images/` (see `content-import/images.txt`). Logo files pending.
 
 ## Develop
 

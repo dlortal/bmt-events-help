@@ -16,6 +16,7 @@ const articles = defineCollection({
     status,
     wordpress_id: z.number().optional(),
     slug: z.string().optional(),
+    tags: z.array(z.string()).optional(),
   }),
 });
 

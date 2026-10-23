@@ -1,5 +1,52 @@
 [
-  { "slug": "getting-started", "title": "Getting started", "blurb": "Signing in, your account and the basics." },
-  { "slug": "running-an-event", "title": "Running an event", "blurb": "Guest lists, invitations, tickets and check-in on the night." },
-  { "slug": "troubleshooting", "title": "Troubleshooting", "blurb": "When something does not work as expected." }
+  {
+    "slug": "cms",
+    "title": "CMS"
+  },
+  {
+    "slug": "creating-an-event",
+    "title": "Creating an Event"
+  },
+  {
+    "slug": "communications",
+    "title": "Emails & Communications"
+  },
+  {
+    "slug": "further-supporting-info",
+    "title": "Further Supporting Info"
+  },
+  {
+    "slug": "managing-an-event",
+    "title": "Managing an Event & Actions Menu"
+  },
+  {
+    "slug": "payment-and-invoicing",
+    "title": "Payments & Invoicing"
+  },
+  {
+    "slug": "reports",
+    "title": "Reports"
+  },
+  {
+    "slug": "support",
+    "title": "Site Setup & Management"
+  },
+  {
+    "slug": "tickets",
+    "title": "Tickets & Guest Information"
+  },
+  {
+    "slug": "users",
+    "title": "Users & Access"
+  },
+  {
+    "slug": "release-notes",
+    "title": "Release Notes",
+    "parent": "further-supporting-info"
+  },
+  {
+    "slug": "bookings",
+    "title": "Bookings",
+    "parent": "tickets"
+  }
 ]
