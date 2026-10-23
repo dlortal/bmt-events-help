@@ -109,7 +109,6 @@ main { flex: 1 0 auto; background: var(--bg); }
 .brand .lockup { display: flex; flex-direction: column; line-height: 1; }
 .brand .word { font-family: var(--serif); font-size: 30px; letter-spacing: .04em; }
 .brand .sub { font-size: 9.5px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; margin-top: 3px; }
-.brand .site { font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); border-left: 1px solid rgba(255,255,255,.3); padding-left: 18px; height: 40px; display: flex; align-items: center; }
 .nav { display: flex; flex: 1 1 auto; align-items: center; justify-content: space-between; gap: 2em; }
 .nav ul { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 2em; }
 .nav ul.ctas { gap: 1em; }
@@ -134,8 +133,7 @@ main { flex: 1 0 auto; background: var(--bg); }
   .nav .d-only { display: none; }
   .nav ul.ctas { margin-top: 14px; gap: 10px; }
   .nav .cta { display: block; text-align: center; }
-  .brand .site { display: none; }
-}
+  }
 
 /* Hero (dark) */
 .hero { background: var(--band); color: var(--band-fg); padding-block: var(--block-pad); border-top: 1px solid rgba(255,255,255,.06); }
