@@ -24,8 +24,8 @@
   --accent-ink: var(--gold-ink);
 
   /* GT Walsheim and Bembo Std are licensed; load them from /fonts when available.
-     Century Gothic is the brand's system fallback; Outfit and EB Garamond are interim web fallbacks. */
-  --display: "GT Walsheim", "Century Gothic", "Outfit", "Helvetica Neue", Arial, sans-serif;
+     Outfit and EB Garamond are self-hosted interim web fonts (src/styles/fonts.css); Century Gothic is the brand's last-resort system fallback. */
+  --display: "GT Walsheim", "Outfit", "Century Gothic", "Helvetica Neue", Arial, sans-serif;
   --body: "Bembo Std", "Bembo", "EB Garamond", Georgia, "Times New Roman", serif;
   --mono: ui-monospace, Menlo, Consolas, monospace;
 

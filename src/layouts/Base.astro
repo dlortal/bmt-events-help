@@ -1,4 +1,5 @@
 ---
+import "../styles/fonts.css";
 import "../styles/global.css";
 import { site } from "../../site.config";
 import Header from "../components/Header.astro";
@@ -16,9 +17,6 @@ const fullTitle = title ? `${title} | ${site.name}` : `${site.name} | ${site.org
     <meta name="description" content={description} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to main content</a>

@@ -10,6 +10,14 @@ Content imported from the WordPress export of 23 October 2026. Images are still 
 
 See [docs/DEPLOY.md](docs/DEPLOY.md) for Cloudflare setup, custom domains and moving accounts.
 
+## Fonts
+
+Headings use GT Walsheim and body copy Bembo, per the BAFTA guidelines. Until web licences for those exist the
+site self-hosts two open-licence stand-ins from `public/fonts/` (Outfit and EB Garamond, declared in
+`src/styles/fonts.css`). To switch to the licensed fonts: drop the WOFF2 files into `public/fonts/`, replace the
+`@font-face` blocks in `src/styles/fonts.css` with ones for `GT Walsheim` and `Bembo Std`, and leave
+`src/styles/global.css` alone; its font stacks already name the brand fonts first.
+
 ## Develop
 
 ```sh
