@@ -1,0 +1,44 @@
+---
+import Base from "../layouts/Base.astro";
+interface Props { noindex?: boolean }
+const { noindex = false } = Astro.props;
+import { site } from "../../site.config";
+import { topCategories, allArticles } from "../lib/content";
+const articles = await allArticles();
+const count = (slug: string) => articles.filter((a) => a.data.category === slug).length;
+const shown = topCategories.filter((c) => count(c.slug) > 0);
+---
+<Base noindex={noindex}>
+  <section class:list={["hero", { centered: (site as { heroAlign?: string }).heroAlign === "center" }]}>
+    <div class="wrap">
+      <div class="rule"></div>
+      <h1 class="display">{site.name}</h1>
+      <p class="descriptor">{site.intro[0]}<br />{site.intro[1]}</p>
+      <form class="search" role="search" action="/search/" method="get">
+        <label class="skip" for="q">Search help articles</label>
+        <input id="q" name="q" type="search" placeholder="Search help articles" autocomplete="off" />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <h2 class="display">Help Articles</h2>
+      <div class="grid">
+        {shown.map((c) => (
+          <a class="card" href={`/help-articles-category/${c.slug}/`}>
+            <h3>{c.title}</h3>
+            {c.blurb && <p>{c.blurb}</p>}
+            <span class="count">{count(c.slug)} article{count(c.slug) === 1 ? "" : "s"}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+  <section class="cta-band">
+    <div class="wrap">
+      <p>{site.supportPrompt}</p>
+      <a class="button gold" href={site.supportUrl} target={site.supportUrl.startsWith("http") ? "_blank" : undefined} rel={site.supportUrl.startsWith("http") ? "noopener" : undefined}>{site.supportLabel}</a>
+    </div>
+  </section>
+</Base>
