@@ -15,6 +15,8 @@ export const site = {
   websiteUrl: "https://bmt.bafta.org/",
   accent: "purple" as "gold" | "teal" | "purple" | "blue" | "red",
   // Search engines: true adds a sitemap and allows indexing; false sends noindex and a disallow-all robots.txt.
+  // Ask AI crawlers to stay away (robots.txt rules + X-Robots-Tag). Enforce it with Cloudflare's AI bot blocking.
+  blockAiCrawlers: true,
   indexable: false,
   nav: [
     { label: "Home", href: "/" },
