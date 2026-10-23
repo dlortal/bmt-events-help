@@ -1,17 +1,28 @@
 ---
+// Header laid out like bmt.bafta.org: logo, then the primary links beside it, then outlined buttons on the right.
 import { site } from "../../site.config";
 import Logo from "./Logo.astro";
 const path = Astro.url.pathname;
 const current = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
+const primary = site.nav.filter((n) => !n.external);
+const ctas = site.nav.filter((n) => n.external);
 ---
 <header class="site-header">
   <div class="wrap">
     <Logo />
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav class="nav" id="site-nav" aria-label="Primary">
-      <ul>
-        {site.nav.map((n) => <li><a href={n.href} aria-current={current(n.href) ? "page" : undefined}>{n.label}</a></li>)}
-        <li><a class="search-link" href="/search/" aria-current={current("/search/") ? "page" : undefined}>Search</a></li>
+      <ul class="primary">
+        {primary.map((n) => <li><a href={n.href} aria-current={current(n.href) ? "page" : undefined}>{n.label}</a></li>)}
+        <li class="m-only"><a href="/search/" aria-current={current("/search/") ? "page" : undefined}>Search</a></li>
+      </ul>
+      <ul class="ctas">
+        {ctas.map((n) => <li><a class="cta" href={n.href} target="_blank" rel="noopener">{n.label}</a></li>)}
+        <li class="d-only">
+          <a class="search-link" href="/search/" aria-label="Search" aria-current={current("/search/") ? "page" : undefined}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg>
+          </a>
+        </li>
       </ul>
     </nav>
   </div>

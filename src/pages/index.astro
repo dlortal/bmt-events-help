@@ -10,8 +10,8 @@ const shown = topCategories.filter((c) => count(c.slug) > 0);
   <section class="hero">
     <div class="wrap">
       <div class="rule"></div>
-      <h1 class="display">How can we help?</h1>
-      <p class="descriptor">{site.tagline}</p>
+      <h1 class="display">{site.name}</h1>
+      <p class="descriptor">{site.intro[0]}<br />{site.intro[1]}</p>
       <form class="search" role="search" action="/search/" method="get">
         <label class="skip" for="q">Search help articles</label>
         <input id="q" name="q" type="search" placeholder="Search help articles" autocomplete="off" />
@@ -21,7 +21,7 @@ const shown = topCategories.filter((c) => count(c.slug) > 0);
   </section>
   <section class="section">
     <div class="wrap">
-      <p class="eyebrow">Browse by topic</p>
+      <h2 class="display">Help Articles</h2>
       <div class="grid">
         {shown.map((c) => (
           <a class="card" href={`/help-articles-category/${c.slug}/`}>
@@ -33,12 +33,10 @@ const shown = topCategories.filter((c) => count(c.slug) > 0);
       </div>
     </div>
   </section>
-  <section class="section">
+  <section class="cta-band">
     <div class="wrap">
-      <div class="helpbox">
-        <p><strong>Can't find what you need?</strong></p>
-        <p><a href="/contact/">Contact the team</a> and we'll get back to you as soon as we can.</p>
-      </div>
+      <p>{site.supportPrompt}</p>
+      <a class="button gold" href={site.supportUrl} target="_blank" rel="noopener">{site.supportLabel}</a>
     </div>
   </section>
 </Base>

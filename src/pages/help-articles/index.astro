@@ -5,11 +5,11 @@ import ArticleList from "../../components/ArticleList.astro";
 import { topCategories, allArticles } from "../../lib/content";
 const articles = await allArticles();
 ---
-<Base title="Help articles">
+<Base title="Help Articles">
   <div class="wrap">
-    <Crumbs items={[["Home", "/"], ["Help articles"]]} />
+    <Crumbs items={[["Home", "/"], ["Help Articles"]]} />
     <header class="page-head">
-      <h1 class="display">Help articles</h1>
+      <h1 class="title">Help Articles</h1>
       <p class="descriptor">{articles.length} articles in {topCategories.length} sections.</p>
     </header>
     {topCategories.map((c) => {

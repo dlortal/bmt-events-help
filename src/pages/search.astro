@@ -14,7 +14,7 @@ import Crumbs from "../components/Crumbs.astro";
         window.addEventListener("DOMContentLoaded", () => {
           const q = new URLSearchParams(location.search).get("q") || "";
           if (!window.PagefindUI) { document.getElementById("search").textContent = "Search is available once the site is built."; return; }
-          new PagefindUI({ element: "#search", showSubResults: true, showImages: false, resetStyles: false });
+          new PagefindUI({ element: "#search", showSubResults: true, showImages: false, resetStyles: false, autofocus: true, translations: { placeholder: "Search help articles" } });
           if (q) { const i = document.querySelector("#search input"); if (i) { i.value = q; i.dispatchEvent(new Event("input", { bubbles: true })); } }
         });
       </script>

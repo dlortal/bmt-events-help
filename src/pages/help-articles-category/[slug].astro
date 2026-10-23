@@ -11,9 +11,9 @@ const articles = await articlesIn(category.slug);
 ---
 <Base title={category.title} description={category.blurb}>
   <div class="wrap">
-    <Crumbs items={[["Home", "/"], ["Help articles", "/help-articles/"], [category.title]]} />
+    <Crumbs items={[["Home", "/"], ["Help Articles", "/help-articles/"], [category.title]]} />
     <header class="page-head">
-      <h1 class="display">{category.title}</h1>
+      <h1 class="title">{category.title}</h1>
       {category.blurb && <p class="descriptor">{category.blurb}</p>}
     </header>
     <section class="cat-block">

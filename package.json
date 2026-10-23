@@ -8,9 +8,11 @@
     "preview": "astro preview",
     "check": "astro check || true",
     "deploy": "npm run build && wrangler deploy",
-    "import": "node scripts/wp-import.mjs"
+    "import": "node scripts/wp-import.mjs",
+    "brand-assets": "node scripts/brand-assets.mjs"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
     "astro": "^5.18.2",
     "fast-xml-parser": "4.5.0",
     "pagefind": "^1.5.2",

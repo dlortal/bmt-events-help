@@ -6,17 +6,16 @@ Built to the BAFTA brand guidelines (September 2023) with Astro and hosted on a 
 
 ## Status
 
-Content imported from the WordPress export of 23 October 2026. Images are still to be copied into `public/images/` (see `content-import/images.txt`). Logo files pending.
+Content imported from the WordPress export of 23 October 2026 (57 articles in 10 sections, one draft page). Images are pending: the one image the articles reference is listed in `content-import/images.txt` and will be added from the uploads backup. Logo is the BMT lockup used on bmt.bafta.org.
 
 See [docs/DEPLOY.md](docs/DEPLOY.md) for Cloudflare setup, custom domains and moving accounts.
 
 ## Fonts
 
-Headings use GT Walsheim and body copy Bembo, per the BAFTA guidelines. Until web licences for those exist the
-site self-hosts two open-licence stand-ins from `public/fonts/` (Outfit and EB Garamond, declared in
-`src/styles/fonts.css`). To switch to the licensed fonts: drop the WOFF2 files into `public/fonts/`, replace the
-`@font-face` blocks in `src/styles/fonts.css` with ones for `GT Walsheim` and `Bembo Std`, and leave
-`src/styles/global.css` alone; its font stacks already name the brand fonts first.
+Headings and body copy use GT Walsheim Pro, BAFTA's licensed headline face, self-hosted from `public/fonts/` in four
+weights (Thin, Light, Regular, Medium) and declared in `src/styles/fonts.css`. The files are the ones served by the
+BMT website theme (bmt.bafta.org). `src/styles/global.css` names the brand fonts in its font stacks ahead of system
+fallbacks, so swapping font files only ever touches `public/fonts/` and `src/styles/fonts.css`.
 
 ## Develop
 

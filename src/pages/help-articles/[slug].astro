@@ -20,11 +20,11 @@ const showSummary = summary && !bodyStart.startsWith(norm(summary).replace(/…$
 ---
 <Base title={article.data.title} description={article.data.summary}>
   <div class="wrap">
-    <Crumbs items={[["Home", "/"], ["Help articles", "/help-articles/"], [category?.title ?? article.data.category, `/help-articles-category/${article.data.category}/`], [article.data.title]]} />
+    <Crumbs items={[["Home", "/"], ["Help Articles", "/help-articles/"], [category?.title ?? article.data.category, `/help-articles-category/${article.data.category}/`], [article.data.title]]} />
     <div class="article-layout">
       <article class="article" data-pagefind-body>
         <p class="eyebrow">{tag}</p>
-        <h1 class="display">{article.data.title}</h1>
+        <h1 class="title">{article.data.title}</h1>
         {showSummary && <p class="descriptor">{summary}</p>}
         <div class="prose"><Content /></div>
         {article.data.updated && <p class="updated">Updated {fmt(article.data.updated)}</p>}
@@ -35,8 +35,8 @@ const showSummary = summary && !bodyStart.startsWith(norm(summary).replace(/…$
           {siblings.map((s) => <li><a href={`/help-articles/${s.id}/`} aria-current={s.id === article.id ? "page" : undefined}>{s.data.title}</a></li>)}
         </ul>
         <div class="helpbox">
-          <p><strong>Still stuck?</strong></p>
-          <p>Email <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a> and one of the team will get back to you.</p>
+          <p>{site.supportPrompt}</p>
+          <p><a class="button gold" href={site.supportUrl} target="_blank" rel="noopener">{site.supportLabel}</a></p>
         </div>
       </aside>
     </div>
