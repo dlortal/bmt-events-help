@@ -1,1 +1,11 @@
-{ "extends": "astro/tsconfigs/base", "compilerOptions": { "resolveJsonModule": true, "strictNullChecks": true } }
+{
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "strictNullChecks": true
+  },
+  "exclude": [
+    "worker",
+    "dist"
+  ]
+}

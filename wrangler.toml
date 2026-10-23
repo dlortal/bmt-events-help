@@ -1,12 +1,16 @@
 name = "bmt-events-help"
+main = "worker/index.ts"
 compatibility_date = "2026-10-01"
 
-# Static site served by Cloudflare Workers Static Assets. No Worker script is needed yet;
+# Static site on Cloudflare Workers Static Assets. The Worker runs first only for "/" so it can
+# redirect old WordPress "?p=ID" links; every other request is served directly from the assets.
 # _headers and _redirects in public/ are honoured by the assets layer.
 [assets]
 directory = "./dist"
+binding = "ASSETS"
 not_found_handling = "404-page"
 html_handling = "auto-trailing-slash"
+run_worker_first = ["/"]
 
 # Custom domain is attached once DNS for bmt.bafta.org is in this Cloudflare account:
 # [[routes]]
