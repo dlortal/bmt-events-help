@@ -8,6 +8,8 @@ Built to the BAFTA brand guidelines (September 2023) with Astro and hosted on a 
 
 Content imported from the WordPress export of 23 October 2026. Images are still to be copied into `public/images/` (see `content-import/images.txt`). Logo files pending.
 
+See [docs/DEPLOY.md](docs/DEPLOY.md) for Cloudflare setup, custom domains and moving accounts.
+
 ## Develop
 
 ```sh
