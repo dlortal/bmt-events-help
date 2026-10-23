@@ -163,18 +163,24 @@ main { flex: 1 0 auto; background: var(--bg); }
 .hero.centered .descriptor { margin-inline: auto; }
 .hero.centered .search { max-width: 720px; }
 .section.centered > .wrap > h2.display { text-align: center; }
-/* Home as section boxes with article lists (BAFTA View) */
-.home-lists { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 2.5vw, 40px); align-items: start; }
-@media (max-width: 720px) { .home-lists { grid-template-columns: minmax(0, 1fr); } }
-.list-box { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(24px, 3vw, 44px) clamp(24px, 3vw, 40px); }
-.list-box h3 { margin: 0 0 .9em; font-weight: 500; font-size: var(--f-h4); letter-spacing: .02em; text-transform: uppercase; color: var(--accent-ink); }
+/* Home as section boxes with article lists (BAFTA View).
+   CSS columns balance the boxes so there are no ragged gaps between rows. */
+.home-lists { columns: 2 380px; column-gap: clamp(20px, 2.5vw, 32px); max-width: 1180px; margin-inline: auto; text-align: left; }
+.list-box { break-inside: avoid; display: inline-block; width: 100%; margin: 0 0 clamp(20px, 2.5vw, 32px); background: var(--surface); border: 1px solid var(--line); border-top: 2px solid var(--gold); border-radius: var(--radius); padding: clamp(20px, 2.4vw, 32px); }
+.list-box header { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-bottom: .9rem; border-bottom: 1px solid var(--line); }
+.list-box h3 { margin: 0; font-weight: 500; font-size: var(--f-h5); letter-spacing: .06em; text-transform: uppercase; color: var(--accent-ink); }
 :root[data-site-theme="dark"] .list-box h3 { color: var(--gold); }
-.list-box h3 a { text-decoration: none; }
-.list-box h3 a:hover { text-decoration: underline; }
+.list-box h3 a { text-decoration: none; color: inherit; }
+.list-box h3 a:hover { text-decoration: underline; text-underline-offset: .2em; }
+.list-box .count { flex: none; font-size: var(--f-small); color: var(--muted); }
 .list-box ul { list-style: none; margin: 0; padding: 0; }
-.list-box li { margin: 0 0 .85em; }
-.list-box li a { color: var(--fg-strong); text-decoration: none; font-size: var(--f-body); }
-.list-box li a:hover { text-decoration: underline; text-decoration-color: var(--gold); }
+.list-box li + li { border-top: 1px solid var(--line); }
+.list-box li a { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .8rem 0; color: var(--fg-strong); text-decoration: none; font-size: var(--f-body); line-height: 1.4; }
+.list-box li:last-child a { padding-bottom: 0; }
+.list-box li a svg { flex: none; color: var(--muted); transition: transform .15s ease, color .15s ease; }
+.list-box li a:hover span { text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: .2em; }
+.list-box li a:hover svg, .list-box li a:focus-visible svg { color: var(--gold); transform: translateX(3px); }
+@media (prefers-reduced-motion: reduce) { .list-box li a svg { transition: none; } }
 
 /* Sections */
 .section { padding-block: var(--block-pad); }
