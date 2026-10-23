@@ -15,7 +15,7 @@ export const site = {
   websiteUrl: "https://bmt.bafta.org/",
   accent: "purple" as "gold" | "teal" | "purple" | "blue" | "red",
   // Search engines: true adds a sitemap and allows indexing; false sends noindex and a disallow-all robots.txt.
-  indexable: true,
+  indexable: false,
   nav: [
     { label: "Home", href: "/" },
     { label: "Help Articles", href: "/help-articles/" },
