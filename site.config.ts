@@ -8,7 +8,6 @@ export const site = {
   description: "Help Articles for the BAFTA Events Management System",
   intro: [
     "The Events Help site is full of resources written to help you understand the full power of your Events instance.",
-    "In the FAQ section you will find answers to common questions and in the Help Articles you will find detailed documentation explaining processes and functionality.",
   ],
   supportPrompt: "If you have a question that is not covered by the FAQs or Help Articles or an issue which needs further support please create and submit a support ticket.",
   supportLabel: "Submit Support Ticket",
