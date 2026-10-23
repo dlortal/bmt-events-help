@@ -24,10 +24,12 @@ const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
 await page.setContent(html); await page.evaluate(() => document.fonts.ready);
 await page.screenshot({ path: "public/og.png" });
-for (const [file, size] of [["favicon-32.png", 32], ["apple-touch-icon.png", 180]]) {
+// favicon-32: transparent like the SVG. apple-touch-icon: solid dark background (iOS fills transparency with black).
+for (const [file, size, bg] of [["favicon-32.png", 32, "transparent"], ["apple-touch-icon.png", 180, site.themeColor]]) {
   const p = await browser.newPage({ viewport: { width: size, height: size } });
-  await p.setContent(`<style>*{margin:0}html,body{background:#000}svg{display:block;width:${size}px;height:${size}px}</style>${favicon}`);
-  await p.screenshot({ path: `public/${file}`, omitBackground: false });
+  const pad = Math.round(size * 0.12);
+  await p.setContent(`<style>*{margin:0}html,body{background:${bg}}svg{display:block;width:${size - 2 * pad}px;height:${size - 2 * pad}px;margin:${pad}px}</style>${favicon}`);
+  await p.screenshot({ path: `public/${file}`, omitBackground: bg === "transparent" });
 }
 await browser.close();
 console.log("wrote public/og.png, favicon-32.png, apple-touch-icon.png");
