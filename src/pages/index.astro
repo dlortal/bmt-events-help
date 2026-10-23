@@ -36,7 +36,7 @@ const shown = topCategories.filter((c) => count(c.slug) > 0);
   <section class="cta-band">
     <div class="wrap">
       <p>{site.supportPrompt}</p>
-      <a class="button gold" href={site.supportUrl} target="_blank" rel="noopener">{site.supportLabel}</a>
+      <a class="button gold" href={site.supportUrl} target={site.supportUrl.startsWith("http") ? "_blank" : undefined} rel={site.supportUrl.startsWith("http") ? "noopener" : undefined}>{site.supportLabel}</a>
     </div>
   </section>
 </Base>

@@ -89,13 +89,24 @@ h2.display { font-size: var(--f-h2); margin: 0 0 .8em; }
 .descriptor { font-weight: 300; font-size: var(--f-lede); line-height: 1.5; color: var(--fg); max-width: var(--measure); margin: 0; }
 
 /* Buttons (BMT .btn) */
-.button { display: inline-flex; align-items: center; gap: .8em; padding: .55em 1.5em; min-height: 44px; border: 2px solid var(--black); border-radius: var(--radius); background: var(--black); color: var(--white); font-weight: 500; font-size: 1.0625rem; line-height: 1.2; text-decoration: none; cursor: pointer; transition: box-shadow .2s, background .2s, color .2s; }
+.button { --btn-bg: var(--black); --btn-fg: var(--white); display: inline-flex; align-items: center; gap: .8em; padding: .55em 1.5em; min-height: 44px; border: 2px solid var(--btn-bg); border-radius: var(--radius); background: var(--btn-bg); color: var(--btn-fg); font-weight: 500; font-size: 1.0625rem; line-height: 1.2; text-decoration: none; cursor: pointer; transition: box-shadow .2s, background .2s, color .2s; }
 .button:hover, .button:focus-visible { box-shadow: 0 .15em .5em rgba(0,0,0,.25); }
 .button.gold { background: var(--gold); border-color: var(--gold); color: var(--black); }
 .button.gold:hover { background: var(--white); border-color: var(--white); color: var(--black); }
 .button.outline { background: transparent; color: var(--fg-strong); border-color: var(--fg-strong); }
 .button::after { content: ""; width: .5em; height: .5em; border-top: 2px solid currentColor; border-right: 2px solid currentColor; transform: rotate(45deg); transition: transform .2s; }
 .button:hover::after { transform: translateX(3px) rotate(45deg); }
+
+/* Dark site theme (BAFTA View): near-black page, light grey text, gold accents, as the original help site */
+:root[data-site-theme="dark"] {
+  --bg: #121212; --surface: #1c1c1c; --grey: rgba(255,255,255,.05); --fg: #b3b3b3; --fg-strong: #ffffff; --muted: #8d8d8d;
+  --line: rgba(255,255,255,.12); --band: #000000; --gold-ink: #e2b23a; --shadow: 0 20px 60px rgba(0,0,0,.45); color-scheme: dark;
+}
+:root[data-site-theme="dark"] .button { --btn-bg: var(--white); --btn-fg: var(--black); }
+:root[data-site-theme="dark"] .card { border: 1px solid var(--line); border-top: 3px solid var(--accent); }
+:root[data-site-theme="dark"] .search input { background: #ffffff; }
+:root[data-site-theme="dark"] .footer-menu { background: #0a0a0a; }
+:root[data-site-theme="dark"] .article .prose img { border: 1px solid var(--line); }
 
 /* Header: dark band, 94px, logo + primary links left, outlined buttons right (bmt.bafta.org) */
 html { background: var(--band); }
@@ -105,6 +116,8 @@ main { flex: 1 0 auto; background: var(--bg); }
 .site-header .wrap { display: flex; align-items: center; gap: 3em; min-height: var(--header-h); }
 .brand { display: flex; align-items: center; gap: 18px; text-decoration: none; color: inherit; flex: 0 0 auto; }
 .brand img { width: 170px; height: auto; display: block; }
+.brand img[width="36"] { width: 36px; }
+.brand-text { font-weight: 300; font-size: 1.35rem; letter-spacing: .02em; color: var(--band-fg); white-space: nowrap; }
 .site-footer .brand img { width: 150px; }
 .brand .lockup { display: flex; flex-direction: column; line-height: 1; }
 .brand .word { font-family: var(--serif); font-size: 30px; letter-spacing: .04em; }
@@ -240,6 +253,7 @@ details[open] summary::after { content: "\2212"; }
 .footer-menu ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 1em 2.5em; min-height: 72px; align-items: center; }
 .footer-menu a { font-weight: 500; font-size: 1rem; }
 .footer-body .wrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5em clamp(2em, 6vw, 6em); padding-block: var(--block-pad); }
+.footer-lockup { height: 48px; width: auto; display: block; align-self: center; }
 .footer-col h2 { color: inherit; font-weight: 500; font-size: var(--f-h5); margin: 0 0 .7em; }
 .footer-col p { margin: 0; color: var(--band-muted); max-width: 60ch; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); }

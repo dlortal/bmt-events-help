@@ -1,7 +1,10 @@
 ---
-// Footer structure follows the original help sites: menu row, description columns, copyright and company details.
+// Footer structure follows the original help sites: menu row, description columns (or a lockup), copyright and company details.
 import { site } from "../../site.config";
+type Img = { src: string; alt: string; width: number; height: number };
+const extra = site as { footerLogo?: Img; footerText?: string };
 const year = new Date().getFullYear();
+const hasBody = site.footerColumns.length > 0 || !!extra.footerLogo;
 ---
 <footer class="site-footer">
   <nav class="footer-menu" aria-label="Footer">
@@ -11,22 +14,29 @@ const year = new Date().getFullYear();
       </ul>
     </div>
   </nav>
-  <div class="footer-body">
-    <div class="wrap">
-      {site.footerColumns.map((c) => (
-        <section class="footer-col">
-          <h2>{c.title}</h2>
-          <p>{c.text}</p>
-        </section>
-      ))}
+  {hasBody && (
+    <div class="footer-body">
+      <div class="wrap">
+        {extra.footerLogo && <img class="footer-lockup" src={extra.footerLogo.src} alt={extra.footerLogo.alt} width={extra.footerLogo.width} height={extra.footerLogo.height} />}
+        {site.footerColumns.map((c) => (
+          <section class="footer-col">
+            <h2>{c.title}</h2>
+            <p>{c.text}</p>
+          </section>
+        ))}
+      </div>
     </div>
-  </div>
+  )}
   <div class="footer-bottom">
     <div class="wrap">
-      <p>&copy; {year} <a href={site.websiteUrl} target="_blank" rel="noopener">{site.copyright}</a> &middot; {site.smallprint}</p>
-      <ul>
-        {site.legalLinks.map((n) => <li><a href={n.href} target="_blank" rel="noopener">{n.label}</a></li>)}
-      </ul>
+      {extra.footerText
+        ? <p>&copy; {year}{extra.footerText}</p>
+        : <p>&copy; {year} <a href={site.websiteUrl} target="_blank" rel="noopener">{site.copyright}</a>{site.smallprint && <> &middot; {site.smallprint}</>}</p>}
+      {site.legalLinks.length > 0 && (
+        <ul>
+          {site.legalLinks.map((n) => <li><a href={n.href} target="_blank" rel="noopener">{n.label}</a></li>)}
+        </ul>
+      )}
     </div>
   </div>
 </footer>

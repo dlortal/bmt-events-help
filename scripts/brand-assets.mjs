@@ -17,7 +17,7 @@ const css = `
 .rule{width:72px;height:4px;background:#D09705;margin-bottom:28px}
 h1{font-weight:100;font-size:92px;letter-spacing:.02em;text-transform:uppercase;line-height:1}
 p{font-weight:400;font-size:30px;color:rgba(255,255,255,.72);max-width:900px;line-height:1.35;margin-top:22px}
-img{width:300px;display:block}`;
+img{height:110px;width:auto;display:block;align-self:flex-start}`;
 const html = `<style>${css}</style><div class="card"><img src="data:image/png;base64,${logo}"><div><div class="rule"></div><h1>${esc(site.name)}</h1><p>${esc(site.description)}</p></div></div>`;
 
 const browser = await chromium.launch();

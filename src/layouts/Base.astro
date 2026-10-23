@@ -12,7 +12,7 @@ const fullTitle = title ? `${title} | ${site.name}` : `${site.name} | ${site.org
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 <!doctype html>
-<html lang="en-GB" data-accent={site.accent}>
+<html lang="en-GB" data-accent={site.accent} data-site-theme={(site as { theme?: string }).theme ?? "light"}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

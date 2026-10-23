@@ -36,7 +36,7 @@ const showSummary = summary && !bodyStart.startsWith(norm(summary).replace(/…$
         </ul>
         <div class="helpbox">
           <p>{site.supportPrompt}</p>
-          <p><a class="button gold" href={site.supportUrl} target="_blank" rel="noopener">{site.supportLabel}</a></p>
+          <p><a class="button gold" href={site.supportUrl} target={site.supportUrl.startsWith("http") ? "_blank" : undefined} rel={site.supportUrl.startsWith("http") ? "noopener" : undefined}>{site.supportLabel}</a></p>
         </div>
       </aside>
     </div>
