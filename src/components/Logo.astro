@@ -1,8 +1,8 @@
 ---
-// BAFTA Media Technology lockup: the master file used on bmt.bafta.org (wp-content/uploads/2024/01/BAFTA_MEDIATECH.png),
+// BAFTA Media Technology lockup, linking to the BMT website: the master file used on bmt.bafta.org (wp-content/uploads/2024/01/BAFTA_MEDIATECH.png),
 // negative version for dark bands. public/logo-bafta.svg holds the vector BAFTA masterbrand for other uses.
 import { site } from "../../site.config";
 ---
-<a class="brand" href="/" aria-label={`${site.org} ${site.name} home`}>
+<a class="brand" href={site.websiteUrl} aria-label={`${site.org} website`}>
   <img src="/logo.png" alt={site.org} width="170" height="53" />
 </a>

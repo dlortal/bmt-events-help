@@ -1,6 +1,8 @@
 ---
+import { site } from "../../site.config";
 interface Props { items: [string, string?][] }
-const { items } = Astro.props;
+// The first crumb is the help site's own front page; the header lockup goes to the BMT website instead.
+const items = Astro.props.items.map(([label, href]) => (label === "Home" && href === "/" ? [`${site.name} home`, href] : [label, href]) as [string, string?]);
 ---
 <nav class="crumbs" aria-label="Breadcrumb">
   <ol>
