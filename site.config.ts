@@ -9,7 +9,7 @@ export const site = {
   intro: [
     "The Events Help site is full of resources written to help you understand the full power of your Events instance.",
   ],
-  supportPrompt: "If you have a question that is not covered by the FAQs or Help Articles or an issue which needs further support please create and submit a support ticket.",
+  supportPrompt: "If you have a question that is not covered by the Help Articles or an issue which needs further support please create and submit a support ticket.",
   supportLabel: "Submit Support Ticket",
   supportUrl: "https://baftaresearch.atlassian.net/servicedesk/customer/portal/1/user/login?destination=portal%2F1",
   websiteUrl: "https://bmt.bafta.org/",
