@@ -162,6 +162,18 @@ main { flex: 1 0 auto; background: var(--bg); }
 .hero.centered .rule, .hero.centered .search { margin-inline: auto; }
 .hero.centered .descriptor { margin-inline: auto; }
 .hero.centered .search { max-width: 720px; }
+.section.centered > .wrap > h2.display { text-align: center; }
+/* Home as section boxes with article lists (BAFTA View) */
+.home-lists { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: clamp(20px, 2.5vw, 40px); align-items: start; }
+.list-box { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(24px, 3vw, 44px) clamp(24px, 3vw, 40px); }
+.list-box h3 { margin: 0 0 .9em; font-weight: 500; font-size: var(--f-h4); letter-spacing: .02em; text-transform: uppercase; color: var(--accent-ink); }
+:root[data-site-theme="dark"] .list-box h3 { color: var(--gold); }
+.list-box h3 a { text-decoration: none; }
+.list-box h3 a:hover { text-decoration: underline; }
+.list-box ul { list-style: none; margin: 0; padding: 0; }
+.list-box li { margin: 0 0 .85em; }
+.list-box li a { color: var(--fg-strong); text-decoration: none; font-size: var(--f-body); }
+.list-box li a:hover { text-decoration: underline; text-decoration-color: var(--gold); }
 
 /* Sections */
 .section { padding-block: var(--block-pad); }

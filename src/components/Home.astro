@@ -7,6 +7,9 @@ import { topCategories, allArticles } from "../lib/content";
 const articles = await allArticles();
 const count = (slug: string) => articles.filter((a) => a.data.category === slug).length;
 const shown = topCategories.filter((c) => count(c.slug) > 0);
+const opts = site as { heroAlign?: string; homeLayout?: "cards" | "lists" };
+const lists = opts.homeLayout === "lists";
+const inCat = (slug: string) => articles.filter((a) => a.data.category === slug);
 ---
 <Base noindex={noindex}>
   <section class:list={["hero", { centered: (site as { heroAlign?: string }).heroAlign === "center" }]}>
@@ -21,9 +24,21 @@ const shown = topCategories.filter((c) => count(c.slug) > 0);
       </form>
     </div>
   </section>
-  <section class="section">
+  <section class:list={["section", { centered: opts.heroAlign === "center" }]}>
     <div class="wrap">
       <h2 class="display">Help Articles</h2>
+      {lists ? (
+        <div class="home-lists">
+          {shown.map((c) => (
+            <section class="list-box">
+              <h3><a href={`/help-articles-category/${c.slug}/`}>{c.title}</a></h3>
+              <ul>
+                {inCat(c.slug).map((a) => <li><a href={`/help-articles/${a.id}/`}>{a.data.title}</a></li>)}
+              </ul>
+            </section>
+          ))}
+        </div>
+      ) : (
       <div class="grid">
         {shown.map((c) => (
           <a class="card" href={`/help-articles-category/${c.slug}/`}>
@@ -33,6 +48,7 @@ const shown = topCategories.filter((c) => count(c.slug) > 0);
           </a>
         ))}
       </div>
+      )}
     </div>
   </section>
   <section class="cta-band">
