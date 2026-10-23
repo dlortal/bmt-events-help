@@ -7,7 +7,7 @@ const count = (slug: string) => articles.filter((a) => a.data.category === slug)
 const shown = topCategories.filter((c) => count(c.slug) > 0);
 ---
 <Base>
-  <section class="hero">
+  <section class:list={["hero", { centered: (site as { heroAlign?: string }).heroAlign === "center" }]}>
     <div class="wrap">
       <div class="rule"></div>
       <h1 class="display">{site.name}</h1>

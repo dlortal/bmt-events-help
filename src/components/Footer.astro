@@ -15,7 +15,7 @@ const hasBody = site.footerColumns.length > 0 || !!extra.footerLogo;
     </div>
   </nav>
   {hasBody && (
-    <div class="footer-body">
+    <div class:list={["footer-body", { "lockup-only": site.footerColumns.length === 0 }]}>
       <div class="wrap">
         {extra.footerLogo && <img class="footer-lockup" src={extra.footerLogo.src} alt={extra.footerLogo.alt} width={extra.footerLogo.width} height={extra.footerLogo.height} />}
         {site.footerColumns.map((c) => (

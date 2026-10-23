@@ -157,6 +157,11 @@ main { flex: 1 0 auto; background: var(--bg); }
 .search input { flex: 1; min-width: 0; padding: 14px 18px; border: 0; background: var(--white); color: var(--black); font: 400 1rem var(--display); }
 .search button { padding: 14px 24px; border: 0; background: var(--gold); color: var(--black); font: 500 .9375rem var(--display); letter-spacing: .04em; cursor: pointer; }
 .search button:hover { background: var(--white); }
+/* Centred hero (BAFTA View): rule, title, intro and search box on the centre line */
+.hero.centered { text-align: center; }
+.hero.centered .rule, .hero.centered .search { margin-inline: auto; }
+.hero.centered .descriptor { margin-inline: auto; }
+.hero.centered .search { max-width: 720px; }
 
 /* Sections */
 .section { padding-block: var(--block-pad); }
@@ -254,6 +259,8 @@ details[open] summary::after { content: "\2212"; }
 .footer-menu a { font-weight: 500; font-size: 1rem; }
 .footer-body .wrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5em clamp(2em, 6vw, 6em); padding-block: var(--block-pad); }
 .footer-lockup { height: 48px; width: auto; display: block; align-self: center; }
+.footer-body.lockup-only .wrap { display: flex; justify-content: center; padding-block: clamp(2.5rem, 8vw, 72px); }
+.footer-body.lockup-only .footer-lockup { height: clamp(44px, 6vw, 64px); }
 .footer-col h2 { color: inherit; font-weight: 500; font-size: var(--f-h5); margin: 0 0 .7em; }
 .footer-col p { margin: 0; color: var(--band-muted); max-width: 60ch; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); }
