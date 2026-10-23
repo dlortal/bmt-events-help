@@ -84,6 +84,9 @@ for (const it of ordered_items) {
   if (status === "trash" || status === "auto-draft") continue;
   const title = decode(text(it.title));
   if (/^hello world!?$/i.test(title) || text(it["wp:post_name"]) === "sample-page") { stats.skipped.push(title); continue; }
+  // The WordPress front page becomes the site's home page (its copy goes into site.config); keep its ?p= link pointing at /.
+  const linkPath = text(it.link).replace(siteUrl, "").replace(/\/?$/, "/");
+  if (isPage && linkPath === "/") { idRedirects[Number(text(it["wp:post_id"]))] = "/"; stats.skipped.push(`${title} (front page; copy lives in site.config)`); continue; }
   const fromTitle = () => title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
   let slug = text(it["wp:post_name"]);
   if (!slug || /^\d+$/.test(slug)) slug = fromTitle() || slug; // numeric WordPress slugs get a readable one; the old link is redirected
@@ -123,7 +126,7 @@ for (const it of ordered_items) {
   writeFileSync(join(dir, `${slug}.md`), ["---", ...fm.filter(Boolean), "---", "", body, ""].join("\n"));
   idRedirects[id] = newPath;
   const old = text(it.link).replace(siteUrl, "").replace(/\/?$/, "/");
-  if (old && old !== newPath && !old.startsWith("/?")) redirects.push(`${old} ${newPath} 301`);
+  if (old && old !== "/" && old !== newPath && !old.startsWith("/?")) redirects.push(`${old} ${newPath} 301`);
 }
 
 // Categories: parents first, children after, in export order. Child category URLs redirect to the parent page.
