@@ -26,11 +26,13 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      # Deploy steps run only when the Cloudflare secrets exist, so the build still checks every change
+      # on a fork or before the secrets are added.
       - name: Deploy to production
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' && env.CLOUDFLARE_API_TOKEN != ''
         run: npx wrangler deploy
       - name: Upload preview version
-        if: github.event_name == 'pull_request'
+        if: github.event_name == 'pull_request' && env.CLOUDFLARE_API_TOKEN != ''
         id: preview
         run: |
           out=$(npx wrangler versions upload --preview-alias "pr-${{ github.event.number }}" 2>&1 | tee /dev/stderr)
