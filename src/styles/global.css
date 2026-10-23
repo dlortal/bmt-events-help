@@ -164,7 +164,8 @@ main { flex: 1 0 auto; background: var(--bg); }
 .hero.centered .search { max-width: 720px; }
 .section.centered > .wrap > h2.display { text-align: center; }
 /* Home as section boxes with article lists (BAFTA View) */
-.home-lists { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: clamp(20px, 2.5vw, 40px); align-items: start; }
+.home-lists { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 2.5vw, 40px); align-items: start; }
+@media (max-width: 720px) { .home-lists { grid-template-columns: minmax(0, 1fr); } }
 .list-box { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(24px, 3vw, 44px) clamp(24px, 3vw, 40px); }
 .list-box h3 { margin: 0 0 .9em; font-weight: 500; font-size: var(--f-h4); letter-spacing: .02em; text-transform: uppercase; color: var(--accent-ink); }
 :root[data-site-theme="dark"] .list-box h3 { color: var(--gold); }
