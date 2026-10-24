@@ -9,7 +9,7 @@ export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
     const p = url.searchParams.get("p");
-    const target = p && (redirects as Record<string, string>)[p];
+    const target = p && Object.hasOwn(redirects, p) ? (redirects as Record<string, string>)[p] : undefined;
     if (target) return Response.redirect(new URL(target, url.origin).toString(), 301);
     return env.ASSETS.fetch(request);
   },

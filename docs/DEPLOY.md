@@ -40,12 +40,12 @@ account (NS delegation) or to CNAME the hostname once the domain has been added 
 2. Move the custom domain: remove it from the old Worker, add it to the new one.
 3. Delete the old Worker. Nothing else exists in the old account for this site.
 
-## Alternative: deploy from GitHub Actions
+## GitHub Actions
 
-`.github/workflows/deploy.yml` deploys on push to `main` and uploads a preview on pull requests when two
-repository secrets exist: `CLOUDFLARE_API_TOKEN` (template "Edit Cloudflare Workers") and
-`CLOUDFLARE_ACCOUNT_ID`. Without them it only builds, so it is safe to leave in place alongside Workers Builds.
-Use one route or the other for production, not both.
+`.github/workflows/deploy.yml` builds every push and pull request, so a broken change shows up on
+GitHub before it reaches Cloudflare. It can also deploy `main` if you add the repository secrets
+`CLOUDFLARE_API_TOKEN` (Workers Scripts: Edit, this account only) and `CLOUDFLARE_ACCOUNT_ID`; the
+token is given to the deploy step only. Use Workers Builds or this, not both.
 
 ## Deploy from a laptop
 

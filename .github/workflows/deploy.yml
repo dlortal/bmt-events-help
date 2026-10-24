@@ -1,52 +1,37 @@
-name: Deploy
-# Production deploy on every push to main; a preview URL on every pull request.
-# Needs two repository secrets: CLOUDFLARE_API_TOKEN (Workers Scripts: Edit) and CLOUDFLARE_ACCOUNT_ID.
+name: Build
+# Builds every push and pull request, so a broken change is caught before it reaches Cloudflare.
+# Production deploys run in Cloudflare Workers Builds (docs/DEPLOY.md). Optionally this workflow
+# can deploy main instead: add repository secrets CLOUDFLARE_API_TOKEN (Workers Scripts: Edit,
+# this account only) and CLOUDFLARE_ACCOUNT_ID. The token is given to the deploy step only, never
+# to dependency installs or pull-request code.
 on:
   push:
     branches: [main]
   pull_request:
 concurrency:
-  group: deploy-${{ github.ref }}
+  group: build-${{ github.ref }}
   cancel-in-progress: true
+permissions:
+  contents: read
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
     env:
-      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      WRANGLER_SEND_METRICS: "false"
+      HAS_DEPLOY_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: 22
           cache: npm
       - run: npm ci
       - run: npm run build
-      # Deploy steps run only when the Cloudflare secrets exist, so the build still checks every change
-      # on a fork or before the secrets are added.
       - name: Deploy to production
-        if: github.event_name == 'push' && env.CLOUDFLARE_API_TOKEN != ''
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && env.HAS_DEPLOY_TOKEN == 'true'
         run: npx wrangler deploy
-      - name: Upload preview version
-        if: github.event_name == 'pull_request' && env.CLOUDFLARE_API_TOKEN != ''
-        id: preview
-        run: |
-          out=$(npx wrangler versions upload --preview-alias "pr-${{ github.event.number }}" 2>&1 | tee /dev/stderr)
-          url=$(echo "$out" | grep -oE 'https://[a-z0-9-]+\.[a-z0-9-]+\.workers\.dev' | head -1)
-          echo "url=$url" >> "$GITHUB_OUTPUT"
-      - name: Comment preview link
-        if: github.event_name == 'pull_request' && steps.preview.outputs.url != ''
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const url = "${{ steps.preview.outputs.url }}";
-            const marker = "<!-- preview-url -->";
-            const body = `${marker}\nPreview for this pull request: ${url}`;
-            const { data: comments } = await github.rest.issues.listComments({ ...context.repo, issue_number: context.issue.number });
-            const mine = comments.find((c) => c.body && c.body.startsWith(marker));
-            if (mine) await github.rest.issues.updateComment({ ...context.repo, comment_id: mine.id, body });
-            else await github.rest.issues.createComment({ ...context.repo, issue_number: context.issue.number, body });
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          WRANGLER_SEND_METRICS: "false"

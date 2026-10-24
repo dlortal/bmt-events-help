@@ -2,3 +2,13 @@ node_modules/
 dist/
 .wrangler/
 .DS_Store
+# WordPress backups and local secrets: never commit them.
+*.sql
+*.sql.gz
+*-db.gz
+*-db.gz.crypt
+backup_*.zip
+wp-config*.php
+.dev.vars*
+.env
+.env.*
