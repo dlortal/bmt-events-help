@@ -18,7 +18,7 @@ export const site = {
   // Ask AI crawlers to stay away (robots.txt rules + X-Robots-Tag). Enforce it with Cloudflare's AI bot blocking.
   blockAiCrawlers: true,
   // "Was this article helpful?" under each article (docs/FEEDBACK.md).
-  feedback: true,
+  feedback: false,
   indexable: false,
   nav: [
     { label: "Home", href: "/" },
