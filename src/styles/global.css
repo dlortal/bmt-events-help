@@ -269,11 +269,11 @@ main > .wrap:last-child { padding-bottom: var(--block-pad); }
 .helpnav-sections summary { padding: 11px 0; font-size: .9375rem; line-height: 1.35; }
 .helpnav-sections summary[aria-current="page"] { color: var(--accent-ink); }
 .helpnav-sections ul { list-style: none; margin: 0 0 6px; padding: 0; }
+.helpnav-sections details > ul:last-child { margin-bottom: 14px; }
 .helpnav-sections ul a { display: block; padding: 6px 0 6px 12px; border-left: 2px solid var(--line); font-size: .875rem; line-height: 1.4; color: var(--fg); text-decoration: none; }
 .helpnav-sections ul a:hover { color: var(--fg-strong); text-decoration: underline; }
 .helpnav-sections ul a[aria-current="page"] { border-left: 3px solid var(--accent); padding-left: 11px; color: var(--accent-ink); font-weight: 500; }
 .helpnav-sub { margin: 10px 0 4px; font-weight: 500; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
-.helpnav-all-link { display: inline-block; margin: 4px 0 14px; font-size: .8125rem; color: var(--accent-ink); }
 
 /* "Was this article helpful?" (src/components/Feedback.astro) */
 .feedback { max-width: var(--measure); margin-top: 40px; padding: 24px 28px; border: 1px solid var(--line); border-radius: var(--radius); }
