@@ -1,5 +1,6 @@
 node_modules/
 dist/
+.astro/
 .wrangler/
 .DS_Store
 # WordPress backups and local secrets: never commit them.

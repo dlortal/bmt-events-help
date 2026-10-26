@@ -4,7 +4,7 @@ What a help site needs before its domain moves off WordPress, and where each ite
 
 ## Done in the repository
 
-- [x] Static build with validated content; every push to `main` deploys, every pull request gets a preview
+- [x] Static build with validated content; every push to `main` deploys, every pull request is built by CI
 - [x] Brand: GT Walsheim Pro (licensed, self-hosted), BMT lockup, BAFTA colours and type scale
 - [x] All WordPress content imported; old `?p=` links, slugs and category URLs redirect (301)
 - [x] Search (Pagefind, static index, no third-party service)
@@ -25,7 +25,7 @@ What a help site needs before its domain moves off WordPress, and where each ite
 - [ ] **you** DNS: is `bmt.bafta.org` managed in that Cloudflare account? Custom domains need the zone there
 - [ ] Attach the custom domain to the Worker; Cloudflare issues the certificate
 - [ ] Turn on HSTS at the zone level once HTTPS is confirmed on the custom domain
-- [ ] Check the old sitemap against the new redirect map (`node scripts/check-redirects.mjs` once the domain is live)
+- [ ] Once the domain is live, check every URL in the old sitemap redirects to the right page
 - [ ] Keep the WordPress site read-only for a month, then decommission; cancel its hosting
 
 ## After launch
