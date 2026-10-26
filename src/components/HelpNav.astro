@@ -1,7 +1,8 @@
 ---
 // Left-hand navigation on article and section pages: a search box, then every help section with
 // its articles. The section being read is open and the current article is marked. On phones the
-// list folds away under "Browse help articles" (public/js/helpnav.js closes it there).
+// list folds away under "Browse help articles" (public/js/helpnav.js closes it there). The menu
+// scrolls with the page.
 import { topCategories, allArticles } from "../lib/content";
 interface Props { category?: string; article?: string }
 const { category, article } = Astro.props;
