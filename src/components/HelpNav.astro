@@ -1,0 +1,53 @@
+---
+// Left-hand navigation on article and section pages: a search box, then every help section with
+// its articles. The section being read is open and the current article is marked. On phones the
+// list folds away under "Browse help articles" (public/js/helpnav.js closes it there).
+import { topCategories, allArticles } from "../lib/content";
+interface Props { category?: string; article?: string }
+const { category, article } = Astro.props;
+const articles = await allArticles();
+const sections = topCategories
+  .map((c) => {
+    const items = articles.filter((a) => a.data.category === c.slug);
+    const groups = new Map<string, typeof items>();
+    for (const a of items) {
+      const k = a.data.subcategory ?? "";
+      if (!groups.has(k)) groups.set(k, []);
+      groups.get(k)!.push(a);
+    }
+    return { ...c, count: items.length, groups: [...groups] };
+  })
+  .filter((s) => s.count > 0);
+---
+<nav class="helpnav" aria-label="Help articles" data-pagefind-ignore>
+  <form class="helpnav-search" role="search" action="/search/" method="get">
+    <label class="vh" for="helpnav-q">Search help articles</label>
+    <input id="helpnav-q" name="q" type="search" placeholder="Search help articles" autocomplete="off" />
+    <button type="submit" aria-label="Search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg>
+    </button>
+  </form>
+  <details class="helpnav-all" open>
+    <summary>Browse help articles</summary>
+    <ul class="helpnav-sections">
+      {sections.map((s) => (
+        <li>
+          <details open={s.slug === category}>
+            <summary aria-current={s.slug === category && !article ? "page" : undefined}>{s.title}</summary>
+            {s.groups.map(([sub, items]) => (
+              <>
+                {sub && <p class="helpnav-sub">{sub}</p>}
+                <ul>
+                  {items.map((a) => (
+                    <li><a href={`/help-articles/${a.id}/`} aria-current={a.id === article ? "page" : undefined}>{a.data.title}</a></li>
+                  ))}
+                </ul>
+              </>
+            ))}
+            <a class="helpnav-all-link" href={`/help-articles-category/${s.slug}/`}>All {s.title} articles</a>
+          </details>
+        </li>
+      ))}
+    </ul>
+  </details>
+</nav>
