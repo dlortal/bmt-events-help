@@ -10,7 +10,7 @@ status: published
 wordpress_id: 1225
 ---
 
-### Confirming Event Attendance
+## Confirming Event Attendance
 
 The Confirm Attendance feature enables Admins to easily bulk mark attendance and ‘close out’ their event. 
 
@@ -22,7 +22,7 @@ Once the attendance sheet has been signed off, Admins can select ‘Confirm Atte
 
 The Confirm Attendance feature was developed to support Admins in recording attendance for large events. 
 
-### How to Confirm Attendance
+## How to Confirm Attendance
 
 Follow these steps to utilise the Confirm Attendance feature -
 
@@ -39,7 +39,7 @@ Follow these steps to utilise the Confirm Attendance feature -
 
 5\. Once any known attendance statuses have been manually recorded or updated, select the **‘Confirm Attendance’** button either above or below the table to bulk mark any remaining Users as not attended and close out the event. After actioning this, none will be left as ‘unknown’ or blank. 
 
-6\. A pop-up will appear requesting confirmation on the the action. Select **‘Confirm Attendance’** to proceed.
+6\. A pop-up will appear requesting confirmation on the action. Select **‘Confirm Attendance’** to proceed.
 
 7\. Now every User will be marked as either attended or not attended. A banner message will appear, noting the Admin who confirmed the attendance and when. 
 

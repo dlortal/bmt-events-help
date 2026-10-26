@@ -18,7 +18,7 @@ The Alert List feature was developed to assist Admins in selling out an event, r
 
 Actioning it is fourfold - reviewing email copy; checking email parameters; enabling the alert list; and reviewing an active alert list.
 
-### Review Email Copy
+## Review Email Copy
 
 It is advisable to frequently review email templates and their respective copy. For instance, ensure the Alert List Notify email states that tickets are sold on a first come first serve basis and can still be accessed by the public viewing the Events site.
 
@@ -28,7 +28,7 @@ It is advisable to frequently review email templates and their respective copy. 
 
 **Alert List Remove** - the email Users will receive if they remove themselves from the Alert List.
 
-### Review Email Parameters
+## Review Email Parameters
 
 When more tickets become available for the event, emails will be automatically sent out to Bookers signed up to the Alert List. It is important to review the Alert List email parameters before the event is live. 
 
@@ -44,7 +44,7 @@ When more tickets become available for the event, emails will be automatically s
 
 5\. Once the Alert List email parameters have been edited at the Branch level, **ensure to click on Save** before leaving the page. 
 
-### How to Enable the Alert List and Waitlist on a Event
+## How to Enable the Alert List and Waitlist on a Event
 
 The Alert List feature can be either set up during creating an event or retrospectively when editing an event. 
 
@@ -65,7 +65,7 @@ The Alert List feature can be either set up during creating an event or retrospe
 
 The Alert List is now turned on for this event and will present to any Bookers if the event sells out, enabling them to sign up and hear about new tickets.
 
-### How to View Alert List
+## How to View Alert List
 
 Once the event is live and has sold out, Admins can view the Alert List through the following steps -
 
@@ -105,7 +105,7 @@ Once the event is live and has sold out, Admins can view the Alert List through 
   
 **Note** - it is advisable to routinely check emails are sending successfully. Visit System > Email Queue to review the status of emails. 
 
-### How to Turn Off the Alert List
+## How to Turn Off the Alert List
 
 If circumstances change, the Alert List can be turned off through the following steps:
 
@@ -116,7 +116,7 @@ If circumstances change, the Alert List can be turned off through the following 
 5.  Ensure to **Save** the changes.  
     
 
-### Manually Adding Users: User Type and Ticket Type
+## Manually Adding Users: User Type and Ticket Type
 
 Admins can now specify both **User Type** and **Ticket Type** when manually adding a Booker to the Alert List. This helps ensure the Booker is considered correctly when specific ticket types become available and prevents entries being marked as *unspecified*.
 

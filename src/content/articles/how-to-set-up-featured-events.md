@@ -15,17 +15,17 @@ This functionality can be utilised by Admins to show the importance of an Event,
 
 It is important to note that Featured Events will only be displayed to Users who have been granted ticket allocation to the respective event, and/or belong to the Event’s respective Branch - as such, it’s worth considering what the Home Page visually looks like to different Users or if there are no Featured Events at that time.
 
-### Step One: Turn On in the Branch
+## Step One: Turn On in the Branch
 
 1.  **Log in** to the Events Admin interface.
-2.  Select **Control Centre** from the left-hand tabs manu. 
+2.  Select **Control Centre** from the left-hand tabs menu. 
 3.  Select **Branches** from the menu page. 
 4.  Navigate to the respective **Branch** and select to **Edit** from the **Actions** menu.
 5.  Navigate to the **Display** section. 
 6.  **Turn** ‘Featured Events Section’ to **Yes**. 
 7.  Review, and **Save & Close**. 
 
-### Step Two: Turn On in the Event
+## Step Two: Turn On in the Event
 
 1.  Select **Events List** from the tabs menu. 
 2.  Navigate to the respective **Event** and select **Edit** from the **Actions** menu.

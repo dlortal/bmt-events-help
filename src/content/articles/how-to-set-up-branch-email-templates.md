@@ -15,7 +15,7 @@ The templates account for a range of scenarios that may occur and are either aut
 
 Admins are able to format/brand/style the templates using a WYSIWYG editor (with optional HTML view) and set different parameters such as delivery priority. Additionally, it is possible to utilise the BCC option when defining a template to send Admin-only emails, that inform Admins an action has been taken.
 
-### How to Define a New Email Template
+## How to Define a New Email Template
 
 Email templates must first be ‘defined' before they can be utilised within the system.
 
@@ -68,7 +68,7 @@ Once the Email Template has been created and defined, it will be displayed on th
 
 -   **Email Log / Queue** - navigates to the Email Queue.
 
-### How to Edit and Delete Email Templates
+## How to Edit and Delete Email Templates
 
 Email copy and parameters can often need updating and reviewing. Follow these steps -
 

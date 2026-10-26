@@ -13,7 +13,7 @@ BAFTA Events includes a robust feature set that enables Admins to gather attende
 
 The functionality is versatile and can be selectively applied to individual Events, offering flexibility to Admins. The setup process allows for granular requirements to be defined for each Seat or Space within an Auditorium, as well as for the Venue as a whole. This granular approach provides Admins with the flexibility to determine in advance whether specific requirements can be accommodated. The functionality is particularly designed to support multi-use spaces within an Auditorium, such as a flexible wheelchair space where a seat can be removed if needed. This space can be sold as either a seat or a space, with Admins being alerted via Email upon Booking completion, ensuring they are aware of the requirement in advance. Additionally, this information can be relayed directly to the Venue, and a signoff process allows Bookers to have confidence that their needs will be supported. Admins can also sensitively reach out to attendees in advance to offer support or explain why a request cannot be accommodated.
 
-### Allocated and Unallocated Auditoriums
+## Allocated and Unallocated Auditoriums
 
 The two main processes, which differ in terms of setup and operation, are for **Allocated** and **Unallocated** events. Additionally, there is a separate process for events with **Pending Bookings**, where accessibility requirements can be provided on a per-ticket basis after the booking has been approved.
 
@@ -30,7 +30,7 @@ As a default the following accessibility options have been created.
 
 If you require additional options please create a support ticket to request these and we can discuss the work required to add them.
 
-### How to enable the Accessibility functionality
+## How to enable the Accessibility functionality
 
 The functionality is available on all instances but as a default its switched off. It is configurable on a per Branch basis, but in order to appear for an Event please follow these instructions:
 
@@ -42,7 +42,7 @@ The functionality is available on all instances but as a default its switched of
 
 Actioning this will enable all of the Accessibility functionality for the branch which will be used in further sections.
 
-### How to set up the Admin Notification Feature
+## How to set up the Admin Notification Feature
 
 The Admin Notification Feature automatically triggers an email to Admins when an Accessible Booking is completed, including any specified accessibility requirements. The User Interface informs the Booker that their request requires Approval, and both emails and on-screen CMS notifications are updated to reflect this messaging. Within the Admin interface, visual notifications will alert Admins to view and approve these requests.
 
@@ -68,7 +68,7 @@ Once the trigger for the notification has been completed you will need to set up
 
 **Note** \- the actions to Approve the Booking will be defined below.
 
-### How to Set-Up an Accessible Event
+## How to Set-Up an Accessible Event
 
 Setting up accessible events closely follows the standard event setup procedure. This section will focus on the specific options required for accessible bookings.
 
@@ -84,7 +84,7 @@ Both Allocated and Unallocated events are configured within the Auditorium secti
 6.  To allow bookers to filter events by accessibility check the relevant boxes for the **Accessibility Filter on Events List** option. This will display a filter on the events list page but will not pertain to the booking process. This is an optional feature.
 7.  Click **Save**
 
-If the auditorium is for allocated seating then you will need to tag the individual seats with the relevant accessibility options. For full information about creating seating plans see the Seating Plan guide..
+If the auditorium is for allocated seating then you will need to tag the individual seats with the relevant accessibility options. For full information about creating seating plans see the [Seating Plan guide](/help-articles/how-to-build-seating-plans/).
 
 1.  Go to **Venues Management>Auditoria**
 2.  Edit or Add a new Auditorium
@@ -95,7 +95,7 @@ If the auditorium is for allocated seating then you will need to tag the individ
 
 **Note** \- the seating plan can be updated at any time.
 
-### How Admins Can to Review and Approve Accessibility Requests
+## How Admins Can to Review and Approve Accessibility Requests
 
 In the section above it was detailed how to setup an email which is triggered to admins based on specific criteria that needs to be approved. If an event has been set up where accessibility criteria needs to be approved then admins will need to action this for each booking that meets the set criteria.
 
@@ -114,11 +114,11 @@ In the section above it was detailed how to setup an email which is triggered to
 
 **Note** - there is no rejection process or approval email as accessibility needs to be handled with a level of consideration for the bookers and its been decided that this should be a manual process outside of the system.
 
-### Process for Bookers
+## Process for Bookers
 
-BMT do not provide documentation for front end users but so that admins can fully understand the process we have briefly capturered the workflow for bookers:
+BMT do not provide documentation for front end users but so that admins can fully understand the process we have briefly captured the workflow for bookers:
 
-#### Unallocated Events
+### Unallocated Events
 
 -   The process is the same until the booker reaches the ticket select page
 -   After the user specifies the number of tickets they require there is an checkbox which can be check to provide accessibility requirements
@@ -128,7 +128,7 @@ BMT do not provide documentation for front end users but so that admins can full
 -   Once the booking is complete they can see if their requirements require approval on the My Bookings page
 -   The requirements are also displayed on the Amend Booking Page
 
-#### Allocated Events
+### Allocated Events
 
 -   The process is the same until the booker reaches the ticket select page
 -   After the user specifies the number of tickets they require there is an checkbox which can be check to provide accessibility requirements
@@ -140,7 +140,7 @@ BMT do not provide documentation for front end users but so that admins can full
 -   Once the booking is complete they can see if their requirements require approval on the My Bookings page
 -   The requirements are also displayed on the Amend Booking Page
 
-### CMS to be updated
+## CMS to be updated
 
 Ticket Select Page
 

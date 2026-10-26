@@ -28,10 +28,10 @@ Events are moved to the archive 60 days after their end date (this is the defaul
 
 Archived events use the same table layout as the main Events List, so you can sort, filter and view them in the same way.
 
-### Can I move an event back to the main list?
+## Can I move an event back to the main list?
 
 Yes. If you need to make an archived event visible in the main Events List again, simply **update the event’s end date** to a date within the last 60 days. The event will automatically reappear in the main list.
 
-### Are archive actions tracked?
+## Are archive actions tracked?
 
 Yes – any movement of events in or out of the archive is recorded in the **Action Log** for full transparency.

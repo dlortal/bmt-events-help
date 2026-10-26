@@ -16,11 +16,11 @@ This article explains how to formally cancel an event using the new cancellation
 
 During cancellation, Admins can include a custom cancellation message, which is automatically inserted into the cancellation email sent to bookers.
 
-### Why use the cancellation workflow?
+## Why use the cancellation workflow?
 
 Previously, cancelling an event involved deleting or hiding it and manually contacting bookers. This often caused confusion and extra admin work. The new workflow introduces a clear **"Cancelled"** status for events and ensures that key actions—like notifying attendees—are handled consistently.
 
-### Cancelling an event
+## Cancelling an event
 
 To cancel an event, follow the steps below:
 
@@ -49,7 +49,7 @@ To cancel an event, follow the steps below:
 
 Once submitted, a confirmation message will appear confirming that the event has been cancelled.
 
-### What happens after cancellation?
+## What happens after cancellation?
 
 Once the event has been cancelled:
 
@@ -65,7 +65,7 @@ Once the event has been cancelled:
 **Important:** Refunds are not handled as part of this workflow and must be managed manually.  
 If you are unsure how to process a refund, please refer to the \[[Refunds guide](/help-articles/how-to-setup-and-manage-the-different-payment-structures/)\] or contact the finance team.
 
-### Additional notes
+## Additional notes
 
 -   The **Cancel Event** option is only available for events that have not already been cancelled.
 -   If you need to edit or amend an event after it has been cancelled, you will need to duplicate the event and start again.

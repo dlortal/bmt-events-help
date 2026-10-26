@@ -3,7 +3,7 @@ title: "Comprehensive Guide to the Ticket System"
 summary: "This guide provides detailed instructions on booking, managing, and distributing event tickets, with a focus on accessibility considerations."
 category: tickets
 order: 100
-tags: ["Attendance","Naviagte","Ticket Links","Tickets"]
+tags: ["Attendance","Navigate","Ticket Links","Tickets"]
 date: 2025-03-25
 updated: 2026-08-05
 status: published

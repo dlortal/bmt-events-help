@@ -15,7 +15,7 @@ This can assist with signposting to Users the nature of the Event, or important 
 
 This functionality can be utilised to best suit an organisation’s needs or aims.
 
-### Step One: Create the Tags
+## Step One: Create the Tags
 
 1.  **Log in** to the Events Admin interface. 
 2.  Select **Control Centre** from the header tabs. 
@@ -25,7 +25,7 @@ This functionality can be utilised to best suit an organisation’s needs or aim
 6.  Select the **Add** button and input the new **Event Tag / Type name** e.g. Conference. 
 7.  Make sure to **Save** the tag on the right hand side. 
 
-### Step Two: Label Specific Events
+## Step Two: Label Specific Events
 
 1.  Select **Events** **List** from the left-hand menu tabs. 
 2.  Navigate to the respective **Event** and select **Edit** from the **Actions** menu. 

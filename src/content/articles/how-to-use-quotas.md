@@ -15,7 +15,7 @@ This works in conjunction with the Ticket Matrix. The Ticket Matrix determines h
 
 Admins can opt to either set a cap on the maximum number of a specific ticket type booked, or similarly to reserve a specific amount of a ticket type. Through various set ups, Admins can achieve a variety of compositions for their events.
 
-### How to Add a Quota
+## How to Add a Quota
 
 1.  **Log in** to the Admin side of BAFTA Events.
 2.  Select **Events** from the left-hand side menu.
@@ -46,7 +46,7 @@ Admins can opt to either set a cap on the maximum number of a specific ticket ty
 
 14.  To delete a quota, click on the **X** on the right hand side of the respective quota.
 
-### How to Review a Quota’s Status
+## How to Review a Quota’s Status
 
 To review a quota’s status, begin by following steps 1-5 above to arrive at the respective Event’s quota page.
 

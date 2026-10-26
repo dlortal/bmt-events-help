@@ -12,7 +12,7 @@ wordpress_id: 1411
 
 A new **Pending** status has been introduced in the admin events system to support better event setup and staging. Events marked as Pending are not visible to the public, but can be previewed in full by admin users.
 
-### When to use it
+## When to use it
 
 Setting an event to **Pending** allows you to:
 
@@ -22,7 +22,7 @@ Setting an event to **Pending** allows you to:
 
 This is particularly useful when you want to stage an event in advance, and ensure it’s fully reviewed before going live.
 
-### How to use it
+## How to use it
 
 To mark an event as Pending:
 
@@ -36,7 +36,7 @@ The event will now be hidden from the public-facing events list, but admin users
 
 > **Note:** Preview Mode is only available for events that are set to Pending. Learn how to use Preview Mode.
 
-### Setting a “Display on Events List” date
+## Setting a “Display on Events List” date
 
 You can now set a **Display on Events List** date to control when a Pending event appears publicly.
 

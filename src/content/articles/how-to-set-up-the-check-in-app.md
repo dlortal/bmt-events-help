@@ -17,7 +17,7 @@ Setting up the app is a threefold process: at the Admin User level, Event level 
 
 Lastly, please ensure to set up and download the app ahead of time. Keep it updated and always run a test before starting the check-in process.
 
-### Admin Level
+## Admin Level
 
 1.  **Log in** to the Admin interface.
 2.  Select **Control Centre** from the tabs menu.
@@ -34,7 +34,7 @@ Lastly, please ensure to set up and download the app ahead of time. Keep it upda
 
 7.  Ensure to review and **Save & Close**.
 
-### Event Level
+## Event Level
 
 1.  Select **Events List** from the tabs menu.
 2.  Navigate to the respective **Event**.
@@ -53,7 +53,7 @@ If you wish to run test scans ahead of the event start time, you may enable **Te
 
 **Note** \- Admins can begin to check guests in at any time on the Event Start Date, regardless of Event Start Time. Please keep this in mind and utilise the time to run any tests.
 
-### Check-in App Level
+## Check-in App Level
 
 1.  Follow the **Check-in App link** as provided by support, or during onboarding.
 2.  Open as a **webpage** and/or save to the respective **device’s home screen**.
@@ -67,7 +67,7 @@ If you wish to run test scans ahead of the event start time, you may enable **Te
 
 **Tip** \- the Device Location name will be logged in the check-in app when a scan is completed.
 
-### Check-in App Pages
+## Check-in App Pages
 
 The Check-in App offers two modes of marking guests attendance: scanning the QR code or checking names in.
 
@@ -93,7 +93,7 @@ To assign a seat, select **Assign** next to the relevant seat.
 
 **Tip** \- the [Attendance page](/help-articles/how-to-confirm-attendance/) on the Admin Interface of Events can utilised alongside the app.
 
-### Colour Codes in the Check-In App
+## Colour Codes in the Check-In App
 
 The app uses colour-coded indicators, depending on the action:
 

@@ -15,7 +15,7 @@ The Events platform enables Admins to create different ‘Seat Types’ and inpu
 
 Users will engage with Seat Types on the Booker Interface when booking tickets for an event with allocated seating. Admins can opt from a range of seat icons and name their seats accordingly to inform Users what they can expect from a seat.
 
-### How to Create Seat Types
+## How to Create Seat Types
 
 Before Seat Types can be utilised within Seat Plans, they must first be created. Follow these steps -
 
@@ -38,7 +38,7 @@ Once the Seat Type has been created, it will be displayed on the Seat Type List 
 -   **Filter By** - input text into the Seat Type columns or select from the Venue Name drop-down to search the table.
 -   **Clear Filters** - will clear any filters as applied above.
 
-### How to Edit and Delete Seat Types
+## How to Edit and Delete Seat Types
 
 Seat Types may been to updated or even deleted over time. To edit an existing Seat Type, follow these steps -
 

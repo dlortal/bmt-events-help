@@ -13,7 +13,7 @@ BAFTA Events offers two primary payment workflows, referred to in the system as 
 
 It is important that these processes are not altered mid-way through any Booking process, as doing so could disrupt payment workflows. Careful planning is essential to determine how Tickets should be paid for before the purchasing process is opened. This guide will explain the different payment workflows, what can be achieved with each, and how to set up the entire process. The system also offers a range of sophisticated and granular functions to support each workflow, many of which are optional. These optional features will be clearly identified throughout the guide.
 
-### Payment Workflow Definitions
+## Payment Workflow Definitions
 
 **Cash Basis Payment Workflow** - Payment is collected immediately when a transaction occurs, requiring Bookers to pay for their tickets at the time of booking. The transaction is recorded when the payment is received, making it straightforward and typically used for immediate payment scenarios. In the context of BAFTA Events, "cash" does not refer to physical money but instead to card payments processed via Stripe. This workflow is typically used for Events where ticket prices are low, such as cinema screenings, concerts, workshops, or small-scale community events.
 
@@ -21,11 +21,11 @@ It is important that these processes are not altered mid-way through any Booking
 
 **Note** \- An Event in terms of the product can only use one workflow, but it is possible to create multiple workflows for the same Event. Please create a support ticket for guidance on setting up for more complex Events.
 
-### User-Level Settings and Overrides
+## User-Level Settings and Overrides
 
 In addition to the primary payment workflows, BAFTA Events provides certain user-level settings that can influence payment processes. One such setting is **Invoice Credit Approved**.
 
-### Invoice Credit Approved
+## Invoice Credit Approved
 
 This setting determines whether a user is authorised to have credit extended for invoice payments.
 
@@ -35,7 +35,7 @@ This setting determines whether a user is authorised to have credit extended for
 
 This setting is particularly useful for managing credit approvals on an individual basis, ensuring that only authorised users can have credit extended to them.
 
-### How to Set-Up the Invoice/Receipt/Credit Notes Documents
+## How to Set-Up the Invoice/Receipt/Credit Notes Documents
 
 Before Admins set up any of the payment workflows, the first step is to configure the necessary PDF templates for Invoices, Receipts, and Credit Notes. Without these templates, the payment workflows will not function properly. When your instance is delivered, BMT will generate these templates for the default branches. However, if you wish to create a new Branch or modify the default templates, these instructions must be followed. If you are setting up payment for the default Branch, this section can be skipped, though it is important to have an understanding of the process.
 
@@ -80,7 +80,7 @@ To replace, edit or create new templates follow these instructions:
     1.  The **Start X**, **Start Y** and **End Y** define where the table will begin and end on each page
     2.  **Item Width**, **Quantity Width**, **Unit Cost Width** and **Item Total Width** are the 4 columns that need to be mapped to the document. All four should be mapped so that the table does not break.
     3.  The Invoice Footer will only appear on the last page of the document. The Start X and Start Y should be plotted below the bottom of the table height on both the first and second page
-    4.  Make sure to include all copy such as Company address and VAT number that is legally required in the **Invoice Footer** test area making sure to adjust the hight so that all the required infromation appers on the page
+    4.  Make sure to include all copy such as Company address and VAT number that is legally required in the **Invoice Footer** text area making sure to adjust the height so that all the required information appears on the page
 10.  There is a Preview function that can be used at any stage so you can review your progress. Make sure that you click **Save** before you click Preview to review your updates.
 11.  When finished click **Save**.
 
@@ -88,7 +88,7 @@ To replace, edit or create new templates follow these instructions:
 
 **Note** - Invoices are not generated for Cash Basis workflows but it is advised to create the document to ensure all the functionality triggers as expected
 
-### How to Set Up the Cash Basis Payment Workflow
+## How to Set Up the Cash Basis Payment Workflow
 
 As detailed above Admins should use this workflow when they want the payment to be collected at the point of Booking. No Tickets will be issued nor Bookings confirmed unless the payment has been completed. Despite using the term cash all payments must be made online using a Credit or Debit Card. The payments will be processed using your Stripe account. At no point will the system allow customers to pay using cash. This is best used where each ticket has a low cost and there is no requirement for Admins to verify Bookers who are applying for Tickets. Once the Cash Basis workflow is set-up then there is little interaction required for Admin users other than processing refunds.
 
@@ -113,7 +113,7 @@ To enable the cash workflow:
 
 **Note** - setting prices for individual Ticket Types is actioned as part of the Event setup.
 
-### How Manage Email Templates for Invoices, Receipts and Credit Notes for Cash Basis Transactions
+## How Manage Email Templates for Invoices, Receipts and Credit Notes for Cash Basis Transactions
 
 There are no additional Emails required to be set up for Cash Basis transactions. Admins should consider that Finance documentation will be attached to the following Email Templates so Admins should consider referencing this in the email content. For more information about managing and setting up Email Templates read the [**Email Template Guide**](/help-articles/how-to-set-up-branch-email-templates/)**.**
 
@@ -131,7 +131,7 @@ If Tickets or Bookings are cancelled then one of the following Email Templates w
 -   **ticket/cancel**
 -   **booking/cancel**
 
-### Cancelling Tickets and Issuing Refunds for Cash Basis Transactions
+## Cancelling Tickets and Issuing Refunds for Cash Basis Transactions
 
 Cash Basis Ticket cancellations and refunds are distinct to Invoice Basis. For Cash Basis transitions the following rules apply:
 
@@ -154,7 +154,7 @@ There are three options available to Admins when managing Tickets:
     -   Issues a full refund via Stripe without cancelling tickets as only paid bookings can be credited in this workflow
     -   Sends either the **booking/cancel** or **ticket/cancel** email template with a credit note pdf attached
 
-#### Admins can refund or cancel:
+### Admins can refund or cancel:
 
 -   **Individual tickets**
     -   Log into the **Admin Interface**
@@ -180,13 +180,13 @@ There are three options available to Admins when managing Tickets:
     -   Choose if you wish to trigger emails to the bookers
     -   All bookings in the event will be updated
 
-### How to Set Up the Invoice Basis Payment Workflow
+## How to Set Up the Invoice Basis Payment Workflow
 
 The Invoice Basis payment workflow differs from Cash Basis as immediate payment is not required for the Tickets to be allocated to the Booker. An Invoice is issued to the Booker and they generally have 30 days to pay. This allows Bookers to pay directly into your company’s bank account via transfer and also Bookers can still pay via Stripe. In this workflow an Invoice is always issued and a Receipt when payment has been completed. There is an additional feature that allows Admins to approve Bookings and the management of this will be covered below. To enable Invoicing:
 
 1.  Log into the **Admin Interface**
 2.  Go to **Control Centre>Branches**
-3.  Select the relevant Brach and click **Edit**
+3.  Select the relevant Branch and click **Edit**
 4.  Scroll down to the **Invoicing and Payment** section
 5.  Select **Yes** for **Invoicing and Payment**
 6.  Select the **Branch currency**
@@ -202,7 +202,7 @@ The Invoice Basis payment workflow differs from Cash Basis as immediate payment 
 12.  Decide if Receipts and Credit notes should be included in the Booking Confirmed Emails. Currently receipts will be sent for all transactions including those of £0.00
 13.  Click **Save**
 
-### How to Set Up Credit Approved Bookers
+## How to Set Up Credit Approved Bookers
 
 In the Invoice Basis workflows Bookers are not able to access their Tickets until they have completed payment. However, there might be circumstances where some Users need access before payment is completed. Some larger companies have 30 or 60 day payment terms once they receive an Invoice with a PO number, which might mean they are not able to process in time before the event. Therefore at an Admin's discretion, Bookers can be set up to bypass the need to pay before they can access their Tickets.  
 Please note that, by default, the **Invoice Credit Approved** field will always be to “**No**” for all User, but it will be visible on the Admin Edit User page at all times. If the site normally requires payment, the override allows bypassing the payment requirement. If site-wide does not require payment, the override is effectively irrelevant but harmless - no need to hide or disable it.
@@ -218,7 +218,7 @@ To action this:
 
 **Note** \- That there is an additional option on the Branch called **Credit Approved Users Must Provide PO**. If this is set to Yes the Credit Approved User will not be able to access their Tickets until they have provided a PO Number on the Booker Interface. Doing this shows that Bookers have shown their intention to pay the Invoice. You will need to make sure that your instructions to Bookers are clear and detail this step. The PO Number can be provided on the Booker’s Invoices page.
 
-### How to Approve Pending Bookings
+## How to Approve Pending Bookings
 
 If **Pending Bookings** has been enabled then instead of the System automatically issuing an Invoice and taking the User to the payment page a **Booking Request** is created, which is reflected on the User's Booking page. This represents a placeholder Booking and although the Tickets will be taken off sale when the request is submitted the Tickets will not be attached to the Bookers account until the booking is approved by an Admin User. Admins can amend the Booking, adding or removing tickets, but once approved it is only possible to Cancel and Credit tickets. To add tickets to the invoice a new booking will need to be created. Once the pending booking is approved the Invoice is created and emailed to the booker who can then pay for their tickets online via Stripe or Bank Transfer. If paid via bank transfer then Admins will need to manually mark the Invoice as paid. Once paid a receipt is sent to the Booker.
 
@@ -240,7 +240,7 @@ If **Pending Bookings** has been enabled then instead of the System automaticall
 -   Go to the **Actions Menu** and select **Approve Booking**
 -   Click Approve in the modal and a confirmation email and invoice will be sent to the booker
 
-### How Manage Emails for Invoice Basis Transactions
+## How Manage Emails for Invoice Basis Transactions
 
 New email templates have been created to support the more complex workflow for Invoice Basis Transactions. These are listed below along with any attachments that are included in the email template. For more information about managing and setting up email templates read the **[Email Template Guide](/help-articles/how-to-set-up-branch-email-templates/)**.
 
@@ -255,7 +255,7 @@ If tickets or bookings are cancelled then one of the following email templates w
 -   **ticket/cancel** \- sent to the booker when a ticket is cancelled, if the ticket is credited at the same time this email will include a credit note
 -   **booking/cancel** \- sent to the booker when a booking is cancelled, if the booking is credited at the same time this email will include a credit note
 
-### Cancelling Tickets and Issuing Refunds for Invoice Basis Transactions
+## Cancelling Tickets and Issuing Refunds for Invoice Basis Transactions
 
 There will be instances when admins will want to cancel and refund tickets. For Invoice basis the workflow is more complex and dependent on the state of the payment.
 
@@ -308,17 +308,17 @@ Admins can refund or cancel:
     -   Choose if you wish to trigger an email to the booker
     -   The tickets and booking will be updated in the table relevant tables based on the action selected
 
-### How to Download Finance Reports
+## How to Download Finance Reports
 
 Events offers some generic reports for which includes all of the finance data. To run the report:
 
 1.  Log into the **Admin Interface**
 2.  Go to **Admin>Reports**
 3.  Click on the **Finance Report**
-4.  Filer as required
+4.  Filter as required
 5.  Click **Download**
 
-### How Bookers can Add a PO Number to Their Invoice
+## How Bookers can Add a PO Number to Their Invoice
 
 Events allows bookers to supply a PO number once the invoice has been generated. After the PO is added bookers can download the new invoice from the My bookings section. Admins can add PO numbers by logging in as a Booker. To add the PO number the booker requires an Approved Booking:
 
@@ -330,7 +330,7 @@ Events allows bookers to supply a PO number once the invoice has been generated.
 -   Click View Invoice to access the updated invoice
 -   Repeat the previous steps if the PO needs further updating - there is no limit to the number of updates
 
-### How Admins can Update PO Numbers on Invoices
+## How Admins can Update PO Numbers on Invoices
 
 Admins can now update the PO number directly from the **Invoices List** using the **Update PO Number** action.
 
@@ -343,22 +343,22 @@ This allows finance teams to keep invoice records accurate without needing to re
 
 1.  Log in to the **Admin interface**.
 2.  Locate the relevant **Event**.
-3.  Click on the **...** **Actions Manu > Invoices**
+3.  Click on the **...** **Actions Menu > Invoices**
 4.  Find the invoice you want to update.
 5.  Hover over the **Action** menu on the right, and select **Update PO Number**.
 6.  A pop up will appear asking you 'Update the PO number for current invoice number e.g. 00025/1C' and 'Are you sure you want to continue?'
 7.  Once you filled in these fields make sure click the **Update** button and it will be saved.
 
-#### What happens next
+### What happens next
 
 After saving:
 
--   A **confirmation message** will appear for the admin confirming the update and whether an email notification was sent.reate invoices.
+-   A **confirmation message** will appear for the admin confirming the update and whether an email notification was sent.
 -   The **PO number is updated** on the invoice.
 -   The update is recorded in the **actions log**.
 -   If enabled, the **invoice notification email** will be sent to the booker.
 
-### How to Change an Address on an Invoice
+## How to Change an Address on an Invoice
 
 Events enables bookers to manage multiple addresses within the address book found in their settings. On the **My Basket** page, they can select different addresses for invoicing. Once they proceed beyond this page, the invoice is generated, and the selected address is locked in, preventing further changes by the booker.
 

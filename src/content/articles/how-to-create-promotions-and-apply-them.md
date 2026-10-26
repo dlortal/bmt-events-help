@@ -83,7 +83,7 @@ F - select for the promotion to be applied via currency or percentage of ticket 
 
 9\. **Review**, and ensure to **Save & Close**.
 
-10.  If the the ‘Everyone Who Books Event’ option was selected, ensure to **select the Promotion** when building or editing the respective Event.
+10.  If the ‘Everyone Who Books Event’ option was selected, ensure to **select the Promotion** when building or editing the respective Event.
 
 Once the Promotion has been created, it will be displayed on the Promotion List page. From here, the following can also be actioned -
 

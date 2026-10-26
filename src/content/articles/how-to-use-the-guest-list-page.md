@@ -15,7 +15,7 @@ The Guest List and Booking Detail pages provide a centralised workspace for mana
 
 * * *
 
-#### Accessing the Guest List
+## Accessing the Guest List
 
 There are two main ways to access the Guest List for an event:
 
@@ -30,7 +30,7 @@ There are two main ways to access the Guest List for an event:
 
 * * *
 
-#### Overview of the Guest List Page
+## Overview of the Guest List Page
 
 The Guest List table offers a row-by-row view of every ticket holder for the event, along with key tools and filters to manage large guest volumes effectively.
 
@@ -47,7 +47,7 @@ A total ticket count is displayed beneath the table.
 
 * * *
 
-#### Filtering and Pagination
+## Filtering and Pagination
 
 Filters at the top of the table allow you to refine the guest list by:
 
@@ -67,7 +67,7 @@ To manage long lists more effectively, use the **pagination filter** to choose h
 
 * * *
 
-#### Action Buttons
+## Action Buttons
 
 At the top right of the Guest List are four key functions:
 
@@ -78,7 +78,7 @@ At the top right of the Guest List are four key functions:
 
 * * *
 
-#### Row Actions Menu
+## Row Actions Menu
 
 Each ticket row includes an **Actions** dropdown menu, allowing you to:
 

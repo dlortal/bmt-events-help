@@ -22,7 +22,7 @@ Please note that -
 -   If Users use SMS or Email mechanism (using the same browser, device, and not clearing their cache) the code should last 30 days.
 -   If they use Google authenticator, then the latest validation will last until they close the browser.
 
-### How to Set Up MFA
+## How to Set Up MFA
 
 1.  Log into the **Admin Interface**
 2.  Go to **Control Centre>Configuration**
@@ -33,13 +33,13 @@ Please note that -
 6.  Click **Save** before leaving the page
 7.  If setting for Admin Users you will be required to enter a MFA code for your account
 
-### Setting Up SMS MFA
+## Setting Up SMS MFA
 
 SMS messages are sent via AWS. This service is not immediately available as an application is required which AWS needs to approve. The application is based on regions and currently, only Europe has been tested. Sending SMS messages to United States phone numbers is extremely difficult due to US Government legislation so we advise that SMS is not the only option provided for these Users. If you wish to enable SMS for Users please submit a Support Ticket and confirm the regions to which you wish to send SMS messages. BMT will make the application on your behalf.
 
 Also, note that the sending of SMS messages will incur additional AWS costs.
 
-### Setting Up Email MFA
+## Setting Up Email MFA
 
 Events provides Email sending as standard, so there are no additional costs for this method. In order for the Emails to send you will need to ensure that the Email Templates are set up correctly.
 
@@ -51,7 +51,7 @@ Each template can be customised as Admins require but needs to contain the speci
 
 For more information about managing Email Templates read [this](/help-articles/how-to-set-up-branch-email-templates/) guide.
 
-### How to Reset MFA
+## How to Reset MFA
 
 For any reasons, Admin Users have the ability to reset MFA for all other Users Types at any stage. This will allow the user to choose an new MFA type, if available. No emails containing MFA codes will be triggered to the user.
 

@@ -14,12 +14,12 @@ The Events system supports **branch-based translated CMS copy**. Where translati
 
 Translations are managed per branch. For example, users accessing the **Wales branch** may see Welsh where it has been added. If a translation is not available for a page or branch, the platform will fall back to the **default English copy**.
 
-### Before you start
+## Before you start
 
 -   You’ll need admin access to the BAFTA Events admin area.
 -   Translations must be created and maintained in the CMS. If a translated version of the copy is not provided, users will see the default content.
 
-### Enable translations in Configuration
+## Enable translations in Configuration
 
 **If you'd like to enable translations, please raise a Support Ticket, and BMT Support will enable this for you.** **Only a 'Maintainer' account can action this.**
 
@@ -41,14 +41,14 @@ Once enabled, translated CMS content can be provided for each branch.
 -   The pop-up displays the **available language options (for example English, French, Spanish)**.
 -   Entrants can **select a language from the list**, and the page content will automatically update to display the translated version where available.
 
-### Add translations to an Event's copy
+## Add translations to an Event's copy
 
 1.  Go to **Events > Edit**
 2.  The system will present a list of options where a translation can be provided. For example, if you have English, French, Welsh enabled, you should be able to see a Text field for English, one for Welsh, one for French.
 3.  Provide the relevant translations
 4.  Click **Save & Close**
 
-### Add or edit translations in the CMS
+## Add or edit translations in the CMS
 
 1.  From the menu to the left, select **Control Centre**.
 2.  From the new menu, select **CMS**.
@@ -57,7 +57,7 @@ Once enabled, translated CMS content can be provided for each branch.
 5.  Update the relevant **translation fields**.
 6.  Select **Save** or **Save & Close**.
 
-### What you’ll see when editing a CMS item
+## What you’ll see when editing a CMS item
 
 When you open **Edit existing CMS**, the following fields are shown:
 
@@ -73,7 +73,7 @@ This field is used to add translated copy for a specific branch. If completed, t
 **Original**  
 Shows the underlying CMS key or reference name.
 
-### Action buttons
+## Action buttons
 
 The following actions are available when editing CMS items:
 
@@ -82,7 +82,7 @@ The following actions are available when editing CMS items:
 -   **Save** – save changes and remain on the page
 -   **Save & Close** – save changes and return to the CMS list
 
-### Example
+## Example
 
 To translate the **“Login” button** text for a specific branch:
 

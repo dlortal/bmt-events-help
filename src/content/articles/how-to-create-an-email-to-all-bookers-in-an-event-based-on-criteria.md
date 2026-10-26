@@ -10,7 +10,7 @@ status: published
 wordpress_id: 1215
 ---
 
-### How to Use the Bulk Mailout
+## How to Use the Bulk Mailout
 
 The Bulk Mailout feature enables Admins to send or schedule a custom email to event Bookers. This can either be to a specific segment of Bookers i.e. those who have not provided their guest names, or simply to everyone who has booked.
 
@@ -18,7 +18,7 @@ This feature offers Admins the ability to do **Customer Segmentation**, which is
 
 Emails can be scheduled to send on a specific date and time, enabling Admins to prepare communications in advance. Any new customers who match the specific criteria pulled will be automatically added to the email list before sending.
 
-###   
+##   
 How to Send a Bulk Mailout
 
 Using the Bulk Mailout feature consists of selecting the relevant criteria, writing the email and reviewing the customer list pulled.

@@ -15,7 +15,7 @@ However, there may be occasions where Admins wish to book on behalf of guests or
 
 The ‘Admin Book’ functionality will override certain workflows such as the Request/Approve process and will price tickets as free. Once a User has been booked on behalf of, they will be able to manage the respective booking in their My Bookings tab.
 
-### How to Admin Book Tickets
+## How to Admin Book Tickets
 
 1.  **Log in** to the Admin side of BAFTA Events.
 2.  Select **Events List** from the left-hand navigation, then find the relevant event.
@@ -59,7 +59,7 @@ The ‘Admin Book’ functionality will override certain workflows such as the R
 
 **Tip** \- Once a Booking has been made on behalf of a User, they will now be able to view and manage the booking from the My Bookings section of their account.
 
-### Populating Ticketholder Details for Admin Bookings
+## Populating Ticketholder Details for Admin Bookings
 
 For Admin Bookings that contain more than one ticket, Admins can populate Ticketholder details in bulk using the Populate Guest Names option.
 
