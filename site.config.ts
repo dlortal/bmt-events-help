@@ -17,6 +17,8 @@ export const site = {
   // Search engines: true adds a sitemap and allows indexing; false sends noindex and a disallow-all robots.txt.
   // Ask AI crawlers to stay away (robots.txt rules + X-Robots-Tag). Enforce it with Cloudflare's AI bot blocking.
   blockAiCrawlers: true,
+  // "Was this article helpful?" under each article (docs/FEEDBACK.md).
+  feedback: true,
   indexable: false,
   nav: [
     { label: "Home", href: "/" },

@@ -2,15 +2,16 @@
 import { render } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import Crumbs from "../../components/Crumbs.astro";
+import HelpNav from "../../components/HelpNav.astro";
+import Feedback from "../../components/Feedback.astro";
 import { site } from "../../../site.config";
-import { allArticles, articlesIn, categoryBySlug, fmt } from "../../lib/content";
+import { allArticles, categoryBySlug, fmt } from "../../lib/content";
 export async function getStaticPaths() {
   return (await allArticles()).map((a) => ({ params: { slug: a.id }, props: { article: a } }));
 }
 const { article } = Astro.props;
 const { Content } = await render(article);
 const category = categoryBySlug(article.data.category);
-const siblings = await articlesIn(article.data.category);
 const tag = [category?.title, article.data.subcategory].filter(Boolean).join(" · ");
 // Imported summaries are the first paragraph; do not show them twice.
 const norm = (s: string) => s.replace(/[*_`\[\]"'‘’“”]/g, "").replace(/\s+/g, " ").trim().toLowerCase();
@@ -22,23 +23,23 @@ const showSummary = summary && !bodyStart.startsWith(norm(summary).replace(/…$
   <div class="wrap">
     <Crumbs items={[["Home", "/"], ["Help Articles", "/help-articles/"], [category?.title ?? article.data.category, `/help-articles-category/${article.data.category}/`], [article.data.title]]} />
     <div class="article-layout">
-      <article class="article" data-pagefind-body>
-        <p class="eyebrow">{tag}</p>
-        <h1 class="title">{article.data.title}</h1>
-        {showSummary && <p class="descriptor">{summary}</p>}
-        <div class="prose"><Content /></div>
-        {article.data.updated && <p class="updated">Updated {fmt(article.data.updated)}</p>}
-      </article>
-      <aside class="aside" data-pagefind-ignore>
-        <h2>In {category?.title}</h2>
-        <ul>
-          {siblings.map((s) => <li><a href={`/help-articles/${s.id}/`} aria-current={s.id === article.id ? "page" : undefined}>{s.data.title}</a></li>)}
-        </ul>
-        <div class="helpbox">
+      <HelpNav category={article.data.category} article={article.id} />
+      <div class="article-main">
+        <article class="article" data-pagefind-body>
+          <p class="eyebrow">{tag}</p>
+          <h1 class="title">{article.data.title}</h1>
+          {showSummary && <p class="descriptor">{summary}</p>}
+          <div class="prose"><Content /></div>
+          {article.data.updated && <p class="updated">Updated {fmt(article.data.updated)}</p>}
+        </article>
+        <Feedback slug={article.id} title={article.data.title} />
+        <div class="helpbox" data-pagefind-ignore>
           <p>{site.supportPrompt}</p>
           <p><a class="button gold" href={site.supportUrl} target={site.supportUrl.startsWith("http") ? "_blank" : undefined} rel={site.supportUrl.startsWith("http") ? "noopener" : undefined}>{site.supportLabel}</a></p>
         </div>
-      </aside>
+      </div>
     </div>
   </div>
+  <script is:inline src="/js/helpnav.js" defer></script>
+  <script is:inline src="/js/feedback.js" defer></script>
 </Base>

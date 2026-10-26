@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import Crumbs from "../../components/Crumbs.astro";
 import ArticleList from "../../components/ArticleList.astro";
+import HelpNav from "../../components/HelpNav.astro";
 import { topCategories, articlesIn } from "../../lib/content";
 export async function getStaticPaths() {
   return topCategories.map((c) => ({ params: { slug: c.slug }, props: { category: c } }));
@@ -12,12 +13,18 @@ const articles = await articlesIn(category.slug);
 <Base title={category.title} description={category.blurb}>
   <div class="wrap">
     <Crumbs items={[["Home", "/"], ["Help Articles", "/help-articles/"], [category.title]]} />
-    <header class="page-head">
-      <h1 class="title">{category.title}</h1>
-      {category.blurb && <p class="descriptor">{category.blurb}</p>}
-    </header>
-    <section class="cat-block">
-      {articles.length ? <ArticleList articles={articles} /> : <p>No articles in this section yet.</p>}
-    </section>
+    <div class="article-layout">
+      <HelpNav category={category.slug} />
+      <div class="article-main">
+        <header class="page-head">
+          <h1 class="title">{category.title}</h1>
+          {category.blurb && <p class="descriptor">{category.blurb}</p>}
+        </header>
+        <section class="cat-block">
+          {articles.length ? <ArticleList articles={articles} /> : <p>No articles in this section yet.</p>}
+        </section>
+      </div>
+    </div>
   </div>
+  <script is:inline src="/js/helpnav.js" defer></script>
 </Base>
