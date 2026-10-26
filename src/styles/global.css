@@ -250,12 +250,7 @@ main > .wrap:last-child { padding-bottom: var(--block-pad); }
 .article-main > .helpbox { margin-top: 24px; }
 
 /* Help menu (src/components/HelpNav.astro) */
-.helpnav { position: sticky; top: 24px; max-height: calc(100vh - 48px); display: flex; flex-direction: column; }
-.helpnav .helpnav-all { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding-right: 6px; }
-@media (max-width: 1023px) {
-  .helpnav { position: static; max-height: none; display: block; }
-  .helpnav .helpnav-all { overflow: visible; padding-right: 0; }
-}
+/* The menu is part of the page and scrolls with it (no scroll area of its own). */
 .helpnav-search { flex: none; display: flex; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--white); margin-bottom: 18px; }
 .helpnav-search input { flex: 1; min-width: 0; padding: 10px 12px; border: 0; background: var(--white); color: var(--black); font: 400 .9375rem var(--display); }
 .helpnav-search button { display: grid; place-items: center; padding: 0 14px; border: 0; background: var(--gold); color: var(--black); cursor: pointer; }
@@ -273,7 +268,6 @@ main > .wrap:last-child { padding-bottom: var(--block-pad); }
 .helpnav-sections > li { border-bottom: 1px solid var(--line); }
 .helpnav-sections summary { padding: 11px 0; font-size: .9375rem; line-height: 1.35; }
 .helpnav-sections summary[aria-current="page"] { color: var(--accent-ink); }
-@media (min-width: 1024px) { .helpnav-sections details[open] > summary { position: sticky; top: 0; z-index: 1; background: var(--bg); } }
 .helpnav-sections ul { list-style: none; margin: 0 0 6px; padding: 0; }
 .helpnav-sections ul a { display: block; padding: 6px 0 6px 12px; border-left: 2px solid var(--line); font-size: .875rem; line-height: 1.4; color: var(--fg); text-decoration: none; }
 .helpnav-sections ul a:hover { color: var(--fg-strong); text-decoration: underline; }
