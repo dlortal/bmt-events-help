@@ -15,7 +15,7 @@ This guide provides an overview of the available SEO functionalities and how the
 
 SEO for BAFTA Events encompasses both on-page strategies, like improving event details and meta tags, and off-page efforts, such as securing relevant backlinks and maintaining a strong online presence.
 
-### **Understanding the SEO Functionality in BAFTA Events**
+## **Understanding the SEO Functionality in BAFTA Events**
 
 This section details the SEO functionalities available for BAFTA Events. These tools allow you to optimise event pages for improved visibility in search engines and on social media. By understanding and using these features, you can better control how your events are presented and discovered online.
 
@@ -42,7 +42,7 @@ This section details the SEO functionalities available for BAFTA Events. These t
     -   **Function:** This field allows you to add a meta description for the event page.
     -   **Description:** The meta description is a brief summary of the page's content that appears in search engine results under the page title. A well-written description can improve click-through rates by providing users with a clear and enticing overview of the page.
 
-### **How to Manage the SEO Functionality in BAFTA Events**
+## **How to Manage the SEO Functionality in BAFTA Events**
 
 Managing the SEO functionality for BAFTA Events is a straightforward process. Follow these steps to optimise your event pages effectively:
 

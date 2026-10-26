@@ -55,7 +55,7 @@ If **No**, input the following -
 
 **Tip** \- If these fields are left empty, the Accessibility component will not appear on the Booker Interface.
 
-7.  Please review this guide for further insights into selecting the Accessibility options.
+7.  Please review [this guide](/help-articles/accessibility-features-setup-and-management/) for further insights into selecting the Accessibility options.
 
 8\. **Select or drag** any T&Cs from the ‘Available’ column that apply to this specific Auditoria.
 
@@ -77,7 +77,7 @@ Admins can view which Events are occurring or have occurred at what Auditorium -
 
 ## Seat Plan and Seat Prices
 
-Auditoriums with allocated seating will have Seat Plans and can have auditorium-default Seat Prices, if applicable. The following steps will outline how to navigate to these pages, but please see the respective guides for further instructions on how to action Seat Plans and Seat Prices.
+Auditoriums with allocated seating will have Seat Plans and can have auditorium-default Seat Prices, if applicable. The following steps will outline how to navigate to these pages, but please see the respective guides for further instructions on how to action [Seat Plans](/help-articles/how-to-build-seating-plans/) and Seat Prices.
 
 1.  Navigate to the **‘Actions Menu’** in the left hand column, on the Auditorium List page.
 2.  Select **‘Seat Prices'** or **‘Seat Plan’** from the drop-down menu.

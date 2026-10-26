@@ -33,7 +33,7 @@ Admin Users are core to Events as, without them, there would be no one to manage
 
 **Note** \- When creating new Admin Users, consider what access to Events they require.
 
-### How to Create an Admin User
+## How to Create an Admin User
 
 1.  Log into the **Admin Interface**
 2.  Go to **Control Centre**\>**Admin Users**
@@ -58,7 +58,7 @@ Admin Users are core to Events as, without them, there would be no one to manage
 
 **Tip** – Only **Super Admin** can assign/update permissions for another Admin User.
 
-### Resetting Admin Users’ Passwords
+## Resetting Admin Users’ Passwords
 
 There is no functionality in Events for an Admin User to automatically reset their own password. This is for security reasons and prevents accounts from being compromised. If a User is unable to gain access, they can ask another Admin User to reset their password. To do this:
 
@@ -72,7 +72,7 @@ There is no functionality in Events for an Admin User to automatically reset the
 
 **Note** – Events does not send any notification to users. Admins must pass on login details outside of the system using a secure method.
 
-### Security Mechanisms
+## Security Mechanisms
 
 There are several security mechanisms within Events that help keep both the site and the accounts secure. Events has the facility to set up MFA (Multi-Factor Authentication) for all Admin Users. It is highly recommended to set up MFA for Admin Users, and you can find out how to enable MFA in the [Multi-Factor Authentication Guide](/help-articles/multi-factor-authentication-for-admins/).
 

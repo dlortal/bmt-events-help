@@ -15,7 +15,7 @@ Admins have the option of surfacing the Availability Status of an Event on the h
 
 The functionality is primarily set at the Branch level, but can be overridden on a per Event basis if specific parameters are required.
 
-### Step One: Set at Branch Level
+## Step One: Set at Branch Level
 
 1.  **Log in** to the Events Admin interface. 
 2.  Select **Control Centre** from the left-hand tabs menu. 
@@ -27,7 +27,7 @@ The functionality is primarily set at the Branch level, but can be overridden on
 8.  Input the **percentage** an event should be sold out to flag as ‘Limited Availability’. 
 9.  **Review**, and **Save & Close**. 
 
-### Step Two: Set at Event Level
+## Step Two: Set at Event Level
 
 1.  Select **Events List** from the left-hand tabs menu. 
 2.  Navigate to the respective **Event** and select **Edit** from the **Actions** menu on the right hand side.  

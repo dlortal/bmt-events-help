@@ -15,7 +15,7 @@ Utilising this granular functionality begins with defining the Organisational se
 
 For example, default communication answers or what options to include on a drop-down.
 
-### How to View and Edit Configurations
+## How to View and Edit Configurations
 
 1.  **Log in** to the Admin side of BAFTA Events.
 2.  Select **Control Centre** from the left-hand side menu.
@@ -28,7 +28,7 @@ For example, default communication answers or what options to include on a drop-
 
 7.  **Review**, and ensure to **Save** before leaving the page.
 
-### Configuration Values Definitions
+## Configuration Values Definitions
 
 **Accessibility Email Send Options** - Admins can select from a range of accessibility options. If a User selects one of these options when making a booking, the booking/accessibilityRequested will be triggered to Admins to inform them of such.  
 
@@ -64,7 +64,7 @@ For example, default communication answers or what options to include on a drop-
   
 **Time Zone Display** - This configuration defines how Time Zones are displayed across the Events platform. Please input one of the following values: Always (always display the event time zone); Never (never display the event time zone); Different (displays the time zone only if the user is in a different time zone to the event).
 
-### Please Do Not Edit These Values
+## Please Do Not Edit These Values
 
 -   Maximum User Cache Check
 -   Event Debugging IPs

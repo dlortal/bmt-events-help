@@ -15,7 +15,7 @@ The BAFTA Events platform enables Admins to log in as any end User and complete 
 
 It can be advisable for Admins to create their own public accounts on the system (per applicable User Type) to assist with testing.
 
-### How to Log In as a User
+## How to Log In as a User
 
 1.  **Log in** to the Admin side of BAFTA Events.
 2.  Select **Users** from the left-hand navigation.

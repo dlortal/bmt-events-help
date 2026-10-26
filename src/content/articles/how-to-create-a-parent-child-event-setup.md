@@ -13,7 +13,7 @@ The BAFTA Events platform offers Admins the ability to create a overarching ‘P
 
 This is helpful as it reduces the volume of events on the Events Listing page, and means Admins can focus on directing traffic to one URL.
 
-### How to Create a Parent / Child Set Up
+## How to Create a Parent / Child Set Up
 
 The first step is to create the Parent event:
 
@@ -22,7 +22,7 @@ The first step is to create the Parent event:
 3.  Select the **Add button** in the top right hand corner.
 4.  Select **Yes** for **Event is A Parent** input.
 5.  If desired, **input** the Parent Event’s **Venue** (this is optional, as it will be required on the Child Events).
-6.  **Finish** building the event as usual - see further instructions here.
+6.  **Finish** building the event as usual - see further instructions [here](/help-articles/how-to-create-a-standard-event/).
 7.  Ensure to **Review**, and **Save & Close**.
 
 The second step is to create Child Event/s that live under the umbrella of the Parent event.
@@ -32,7 +32,7 @@ The second step is to create Child Event/s that live under the umbrella of the P
 3.  Select the **Add button** in the top right hand corner.
 4.  Select **No** for **Event is A Parent** input.
 5.  **Select** the respective Parent Event from the **Parent Event drop-down list**.
-6.  **Finish** building the event as usual - see further instructions here.
+6.  **Finish** building the event as usual - see further instructions [here](/help-articles/how-to-create-a-standard-event/).
 7.  Ensure to **Review**, and **Save & Close**.
 
 **Note** \- It is advisable to review the Parent / Child setup on the Booker Interface by logging in as a Test User.

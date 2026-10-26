@@ -25,29 +25,29 @@ The tags display in two colours:
 
 These tags appear automatically on the event listing in the **Booker Interface** once configured, helping to drive ticket sales by highlighting scarcity. Below is a step-by-step guide on how to enable and customise these settings.
 
-### **1\. Enabling Availability Tags**
+## **1\. Enabling Availability Tags**
 
 To activate the availability tags, navigate to the **Admin Interface** and locate your event and open to settings, then locate **Display Low/Limited Availability Tags**.
 
 Select **Yes** to enable the feature.
 
-### **2\. Configuring Availability Thresholds**
+## **2\. Configuring Availability Thresholds**
 
 After enabling the feature, you must set the percentages that determine when an event will be flagged as having **Low Availability** or **Limited Availability**.
 
-#### **Low Availability Threshold**
+### **Low Availability Threshold**
 
 -   This percentage determines when the event will be marked as "Low Availability."
 -   For example, if you set **80%**, once 80% of tickets have been sold, the tag will appear on the event listing.
 -   This signals to attendees that tickets are selling fast, encouraging early purchases.
 
-#### **Limited Availability Threshold**
+### **Limited Availability Threshold**
 
 -   This percentage determines when the event will be marked as "Limited Availability."
 -   If set at **90%**, the tag will appear once 90% of tickets are sold.
 -   This further reinforces urgency, letting attendees know only a small number of tickets remain.
 
-### **3\. How the Percentages Work**
+## **3\. How the Percentages Work**
 
 The percentages are based on the total available tickets for the event. For example:
 
@@ -58,7 +58,7 @@ The percentages are based on the total available tickets for the event. For exam
 
 These percentages can be adjusted depending on how you want to communicate urgency to potential attendees.
 
-### **4\. Saving & Testing**
+## **4\. Saving & Testing**
 
 -   Once the percentages are set, review your settings and **Save & Close** to apply the changes.
 -   To ensure the tags function correctly, you can use the **Admin Booking** feature to simulate ticket sales and verify that the tags appear at the correct thresholds.

@@ -21,7 +21,7 @@ Please note, Admins can retrospectively edit an Event once it is created and upd
 4.  Select the **Add button** in the top right hand corner.
 5.  Fill out the following inputs:
 
-### Basic Details
+## Basic Details
 
 **Event is a Parent** - select No from the drop-down list. To create a Parent/Child event set up, follow this [guide](/help-articles/how-to-create-a-parent-child-event-setup/).
 
@@ -72,7 +72,7 @@ Please note, Admins can retrospectively edit an Event once it is created and upd
 
 **Long Description** \- input a long description of the Event.
 
-**Tip** \- all descriptions have a WYSIWGY editor to allow text to be stylised and formatted. Additionally, hyperlinks can be added and rich media hosted, such as images or videos.
+**Tip** \- all descriptions have a WYSIWYG editor to allow text to be stylised and formatted. Additionally, hyperlinks can be added and rich media hosted, such as images or videos.
 
 **Event Specific Ticket Select Page Copy** - select Yes or No from the drop-down list. If Yes is selected, a text box will appear below which will allow Admins to add copy that will present on the Ticket Selection page. This can be useful if Admins believe Users will need guidance on what tickets to select.
 
@@ -152,7 +152,7 @@ If the Ticket Template is set, this will override the 'Ticket Design' option set
 
 **Reporting Tags** - please ignore this input.
 
-### Ticket Rules
+## Ticket Rules
 
 The next section, the Ticket Matrix, determines what User Types can book into the Event, which Ticket Types and how many.
 
@@ -163,7 +163,7 @@ The next section, the Ticket Matrix, determines what User Types can book into th
 
 **Tip** \- Admins can utilise the above matrix to determine how tickets a certain User Type can book.
 
-### Terms and Conditions
+## Terms and Conditions
 
 Please note if T&Cs are set here, they will override event [Terms and Conditions set at the Branch level](/help-articles/how-to-create-edit-and-apply-terms-conditions/).
 
@@ -175,15 +175,15 @@ Please note if T&Cs are set here, they will override event [Terms and Conditions
 
 **Standard T&Cs** - [predefined T&Cs](/help-articles/how-to-create-edit-and-apply-terms-conditions/) can be selected here, which the User will have to consent to.
 
-### Ticket Validator App
+## Ticket Validator App
 
 Please select the relevant Admins from the Available column who can check guests into this Event. Please note, only Admins who belong to the respective Branch can check Guests in.
 
-### Promotions
+## Promotions
 
 Please select the relevant [Promotions](/help-articles/how-to-create-promotions-and-apply-them/) to apply to this Event, if desired.
 
-### Next Steps
+## Next Steps
 
 7.  Select the **Save button**. This will bring the Admin to top of the page.
 8.  Select the **Seat Prices tab**.

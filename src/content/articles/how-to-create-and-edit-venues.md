@@ -15,7 +15,7 @@ The Events platform enables Admins to create ‘Venues' and input details that r
 
 Furthermore, Venue details will be displayed throughout the User booking flow and in additional communications such as emails, to inform attendees where to go for their Event.
 
-### How to Create and View Venues
+## How to Create and View Venues
 
 Organisations may hold events in several or one main Venue. To add a Venue to the site, follow these steps -
 
@@ -59,7 +59,7 @@ Additionally, as the site setup process is continued, Auditoria and Seat Types m
 
 Alternatively, when ‘Editing’ or viewing a Venue’s details a new section will appear named ‘Other Details’ that lists all the Seat Types and Auditoria applicable to this Venue. Admins can View and Add from this page.
 
-### Pinning Frequently Used Venues
+## Pinning Frequently Used Venues
 
 To support a smoother user experience, especially in the presence of a long list of Venues, it is possible to **Pin** any venue and make it appear at the top of the list, and this can be achieved by actioning the following steps:
 
@@ -71,7 +71,7 @@ To support a smoother user experience, especially in the presence of a long list
 
 Pinned venues are displayed first in alphabetical order, separated from the rest of the list by a fixed, non-selectable divider. All remaining venues continue to display alphabetically.
 
-### How to Edit and Delete Venues
+## How to Edit and Delete Venues
 
 Venue details and suitability can change over time, meaning they may need to be edited or even deleted from the site. To edit an existing Venue, follow these steps -
 

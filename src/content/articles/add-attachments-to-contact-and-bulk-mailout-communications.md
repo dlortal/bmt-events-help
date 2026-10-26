@@ -14,7 +14,7 @@ This guide explains how admins can include file attachments when sending emails 
 
 This feature allows supporting documents (such as PDFs, Word files or schedules) to be sent directly from the platform, reducing the need to use external email systems and keeping event communication in one place.
 
-### What this feature allows you to do
+## What this feature allows you to do
 
 Admins can:
 
@@ -24,7 +24,7 @@ Admins can:
 
 Attachments are used only for the email being sent and are not stored long-term in the system.
 
-### Supported files and limits
+## Supported files and limits
 
 To ensure performance and email deliverability, attachments must meet the following rules:
 
@@ -36,9 +36,9 @@ Files that exceed the size limit or are not in an allowed format cannot be uploa
 
 Attachments must be uploaded again for future emails — previously used files are not saved for reuse.
 
-### Add an attachment to a Bulk Mailout
+## Add an attachment to a Bulk Mailout
 
-### Path (Admin)
+## Path (Admin)
 
 1.  Log in to the admin interface.
 2.  Go to Events List and locate the relevant event.
@@ -57,11 +57,11 @@ Below the **Email body text** field, you will see the option to upload an attach
 
 The selected file will be attached to the email received by all recipients.
 
-### Add an attachment to a Contact Email
+## Add an attachment to a Contact Email
 
 Contact Emails allow admins to message an individual booking or contact.
 
-### Path (Admin)
+## Path (Admin)
 
 1.  Log in to the admin interface.
 2.  Go to the Events List page > Find your event.

@@ -16,7 +16,7 @@ In order to create a seating plan within the BAFTA Events platform, your event m
 
 To enable seating plans, allocated seating must be set at the **auditorium level**. This cannot be changed once saved, so accuracy is essential.
 
-#### Steps:
+## Steps:
 
 1.  Log into the **Admin** side of the Events platform.
 2.  From the top navigation bar, click **Venues**.
@@ -25,7 +25,7 @@ To enable seating plans, allocated seating must be set at the **auditorium level
 
 **Note**: Once an auditorium is saved with or without allocated seating, this setting cannot be edited. If it’s incorrect, delete the auditorium and create a new one.
 
-#### Basic Details:
+## Basic Details:
 
 -   Before doing all of this you’ll need to [create a Venue](/help-articles/how-to-create-and-edit-venues/) and [Seat Types](/help-articles/how-to-create-and-edit-seat-types/) first
 -   Select the correct **Venue** from the dropdown.
@@ -38,11 +38,11 @@ To enable seating plans, allocated seating must be set at the **auditorium level
 -   You may also create **seat types** by following this [guide](/help-articles/how-to-create-and-edit-seat-types/).
 -   Click **Save** to complete the process.
 
-#### 2\. Apply Auditorium to an Event
+## 2\. Apply Auditorium to an Event
 
 Once your auditorium is created, you can link it to your event.
 
-#### Steps:
+## Steps:
 
 1.  Return to the **Events** list from the admin navigation.
 2.  Find the event you are working on.
@@ -51,7 +51,7 @@ Once your auditorium is created, you can link it to your event.
 
 This will take you to the **event information page**. Make sure the correct **auditorium** is applied under the "Auditorium" field.
 
-#### 3\. Access the Seat Plan Builder
+## 3\. Access the Seat Plan Builder
 
 From the event’s edit page:
 
@@ -67,7 +67,7 @@ This opens the **Seat Plan Builder**, where you can:
 
 In some cases, a seating plan may be provided by a client or already exist from a previous event.
 
-#### Summary & Key Reminders
+## Summary & Key Reminders
 
 -   **Allocated seating must be enabled** at auditorium creation to use a seating plan.
 -   Auditoriums **cannot be edited** to change seating allocation once created.

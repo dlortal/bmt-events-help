@@ -17,7 +17,7 @@ The Suspension feature was developed to provide Admins with a deterrent for miss
 
 Actioning it is fourfold: enabling suspension email templates; setting suspension criteria; viewing the suspension list; and manually suspending Bookers.
 
-### How Enable the Suspension Email Templates
+## How Enable the Suspension Email Templates
 
 During the Suspension process, Users may receive a variety of emails from the system and as such, it is important to review email copy ahead of utilising the Suspensions functionality.
 
@@ -29,7 +29,7 @@ During the Suspension process, Users may receive a variety of emails from the sy
 
 **Suspension Ended** (user/suspensionEnded) - an email to inform the User their suspension period has ended.
 
-To edit Email Templates, please follow the below steps or read this guide for detailed information.
+To edit Email Templates, please follow the below steps or read [this guide](/help-articles/how-to-set-up-branch-email-templates/) for detailed information.
 
 1.  Log into your **Admin Interface**.
 2.  Select **Email & Comms** from the left-hand side menu, and select **Email Templates**
@@ -38,7 +38,7 @@ To edit Email Templates, please follow the below steps or read this guide for de
 5.  **Edit** the details accordingly.
 6.  Ensure to **Review**, and **Save** before leaving the page.
 
-### How to Set Suspension Criteria
+## How to Set Suspension Criteria
 
 Suspension rules are set at the branch level, meaning only members from the specified branch will be suspended if they miss an event. Members from other branches or public users are not affected by these rules. Members from other branches will receive a "missed event" email to inform them of the absence; however, it will not currently count towards their missed event tally.
 
@@ -64,7 +64,7 @@ To set the rules:
 
 **Note** - this new suspension criteria will apply to any upcoming events or events that have not yet had the attendance confirmed. The action of Confirming Attendance on the Attendance page is what pulls the respective Users into potential suspension eligibility.
 
-### Excluding a Booker from Suspension Rules
+## Excluding a Booker from Suspension Rules
 
 Admins can exclude individual Users from suspension rules where required. When this setting is enabled for a specific User, they will not be suspended or marked as suspendable by the system, even if they meet the configured suspension criteria.
 
@@ -79,7 +79,7 @@ To exclude a User from suspension rules:
 7.  This setting is set to **No** by default. Expand the dropdown and select **Yes** to activate it for that specific User.
 8.  Select **Save** before leaving the page.
 
-### Viewing the Suspension List
+## Viewing the Suspension List
 
 To view all suspended Users or Users marked as suspendable, follow these steps -
 
@@ -99,7 +99,7 @@ The table will show the User’s details, such as: ID, User Type, First & Last N
 -   **Who Didn’t Attend** - number of User’s party that did not attend.
 -   **Ticket ID & Name** - the ticket ID and name of the User’s party who did not attend.
 
-### Manually Suspending and Unsuspending Users
+## Manually Suspending and Unsuspending Users
 
 **Manual Suspension and Unsuspension via the Users Page**
 
@@ -144,7 +144,7 @@ To unsuspend a User early, follow these steps -
 6.  **Input** a reason, and Save.
 7.  **Ensure** the User is now removed from the Suspended list.
 
-### Suspension Rules
+## Suspension Rules
 
 The following points count as one ‘strike’ or Event Day missed, and will count towards the suspension parameters set.
 

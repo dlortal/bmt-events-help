@@ -14,7 +14,7 @@ The BAFTA Events platform allows Admins to populate ticketholder details in bulk
 
 Using the **Populate Guest Names** function, Admins can upload a list of guest details which will automatically be applied to tickets within a booking.
 
-### Preparing your guest list
+## Preparing your guest list
 
 Guest details must be entered in the following format:
 
@@ -27,7 +27,7 @@ Example:
 
 Ticketholder details are assigned from top to bottom and are only applied to tickets where the fields are currently empty.
 
-### How to batch upload ticketholder names
+## How to batch upload ticketholder names
 
 Log in to the Admin side of BAFTA Events.
 
@@ -39,7 +39,7 @@ Log in to the Admin side of BAFTA Events.
 6.  Paste the guest information into the text area provided.
 7.  Select **Save** or **Save and Close** to apply the changes.
 
-### Validation and system behaviour
+## Validation and system behaviour
 
 Before changes are applied, the system validates the information provided and will flag any issues that require attention. This includes:
 

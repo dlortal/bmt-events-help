@@ -3,7 +3,7 @@ title: "How to Navigate the Events List Page"
 summary: "The Events List Page is designed to help manage and track your events easily."
 category: support
 order: 100
-tags: ["Events list","Events Page","Naviagte"]
+tags: ["Events list","Events Page","Navigate"]
 date: 2025-03-12
 updated: 2026-07-30
 status: published
@@ -12,7 +12,7 @@ wordpress_id: 1345
 
 The Events List Page is designed to help manage and track your events easily. This guide provides an overview of the key elements of the page, including how to use the dashboard, apply filters, access the actions menu, and make use of the various tools that will help manage your events.
 
-### Main Page
+## Main Page
 
 When you first log into the Events section, you'll see a list of events with several columns. These columns contain crucial details about each event, and the layout is designed for easy navigation and quick access to event management options.
 
@@ -23,7 +23,7 @@ Here’s a breakdown of the sections you’ll interact with:
 -   **Actions Menu**: Provides quick access to manage specific events.
 -   **Tools**: Offer additional functionalities such as generating reports, managing guest lists, and viewing seat prices.
 
-### Dashboard
+## Dashboard
 
 The dashboard on the Events List page shows an overview of all the events you're managing. Each event will have a set of information displayed in rows, including:
 
@@ -39,7 +39,7 @@ Each event's row provides an at-a-glance view of the important data, including t
 
 -   **Seats Sold / Total = Value**: This section shows the total number of tickets sold versus the total capacity and the monetary value generated from those sales.
 
-### Filters
+## Filters
 
 Filters are located at the top of the page and allow you to narrow down the displayed events based on criteria such as:
 
@@ -51,7 +51,7 @@ Filters are located at the top of the page and allow you to narrow down the disp
 
 Applying filters makes it easier to find the events you want to manage or monitor.
 
-### **Actions Menu**
+## **Actions Menu**
 
 The "Actions" menu allows you to perform various tasks related to each event. For each event listed in the dashboard, you can access the menu by clicking on the downward arrow next to the event name. The available actions in the menu include:
 
@@ -72,7 +72,7 @@ The "Actions" menu allows you to perform various tasks related to each event. Fo
 -   **Event Ticket Availability Cache**: View and manage ticket availability.
 -   **Delete**: Remove the event from the system.
 
-### Tools
+## Tools
 
 The following tools can be accessed via the main dashboard and help you manage your events more efficiently:
 
@@ -80,7 +80,7 @@ The following tools can be accessed via the main dashboard and help you manage y
 -   **Add**: Use this button to create a new event.
 -   **Clear Filters**: If you have applied filters, you can remove them to view all events again.
 
-### Relevant Guides and Articles
+## Relevant Guides and Articles
 
 For more in-depth guidance on using these features, refer to the following articles:
 

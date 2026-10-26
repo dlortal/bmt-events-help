@@ -13,7 +13,7 @@ The text and media on a website is a large part of what makes each site unique. 
 
 A Content Management System (CMS) is a tool that is used to edit and style different copy that appears across a website. In BAFTA Events, text content can further be set to display to all Users (Global) or defined more specifically to show only to certain Users or Events (per Branch). This is helpful if copy needs to be localized, or teams/regions have specific requirements.
 
-### CMS List Page Definitions
+## CMS List Page Definitions
 
 **Labels** \- Title or headline that succinctly denotes the content in place.
 
@@ -25,19 +25,19 @@ If multi-language support is enabled for your branch, you may see additional fie
 
 **WYSIWYG** - Acronym that stands for What You See Is What You Get and depicts whether the respective content can be stylised, or formatted. For instance, bolded or italicized.
 
-### How to View and Edit Content on the Admin Side
+## How to View and Edit Content on the Admin Side
 
 1.  **Log in** to the Admin side of BAFTA Events.
 2.  Click on **Control Centre** from the left-hand side menu, and click on **CMS**.
 3.  Ensure the correct Branch is selected from the dropdown menu at the top-left of the page.
 4.  Use the **search bar** at the top of the page to find the desired item. You can also click on **Filter By** to reveal search bars for **Global Content** and **Branch Content**.
-5.  Click on the **...** Actions Menu on ther right-hand side of the desired item, and select **Edit**.
+5.  Click on the **...** Actions Menu on the right-hand side of the desired item, and select **Edit**.
 6.  Use the Global and/or Branch Content text fields to **input** or **edit** the copy accordingly.
 7.  **Review**, and ensure to **Save** before leaving the page.
 
 **Note** \- It is advisable to find the page where the copy occurs and **review** how it looks on the Booker Interface.
 
-### How to Delete Content via the Admin Side
+## How to Delete Content via the Admin Side
 
 1.  **Log in** to the Admin side of BAFTA Events.
 2.  Click on **Control Centre** from the left-hand side menu, and click on **CMS**.
@@ -46,7 +46,7 @@ If multi-language support is enabled for your branch, you may see additional fie
 5.  Select **Delete** from the respective copy’s Action menu.
 6.  **Review** and **Confirm** the Deletion. Please **note** this cannot be retrieved without developer assistance and could be chargeable.
 
-### Multi-language support
+## Multi-language support
 
 The Events platform supports **multiple languages**, where this feature has been enabled for a branch.
 

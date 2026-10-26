@@ -13,7 +13,7 @@ The day of a high profile Event or Award is often very busy and processes need t
 
 The Events platform enables Admins to mark certain Guests as either Citation Readers or Nominees, which will surface on the Attendance page and assist event staff with knowing when the show or Event can begin.
 
-### How to Mark a Guest as Citation Reader or Nominee
+## How to Mark a Guest as Citation Reader or Nominee
 
 1.  **Log in** to the **Admin interface** of Events.
 2.  An **Event must first be created**, please follow these [steps](/help-articles/how-to-create-a-standard-event/).
@@ -25,7 +25,7 @@ The Events platform enables Admins to mark certain Guests as either Citation Rea
 8.  Hover over the **Actions menu** and select either **Flag as Nominee or Citation Reader**.
 9.  Please note, the same actions can be followed to **unmark a Guest** as one of the above.
 
-### How to View Citation Readers and Nominees on the Attendance page
+## How to View Citation Readers and Nominees on the Attendance page
 
 1.  **Log in** to the **Admin interface** of Events.
 2.  An **Event must first be created**, please follow these [steps](/help-articles/how-to-create-a-standard-event/).
@@ -39,7 +39,7 @@ The Events platform enables Admins to mark certain Guests as either Citation Rea
 
 **Note** \- the Citation Reader / Nominee columns will only show on the Attendance page if in use.
 
-### How to Add Nominated Categories
+## How to Add Nominated Categories
 
 1.  **Log in** to the **Admin interface** of Events.
 2.  An **Event must first be created**, please follow these [steps](/help-articles/how-to-create-a-standard-event/).
