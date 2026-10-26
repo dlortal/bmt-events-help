@@ -6,7 +6,7 @@ Built to the BAFTA brand guidelines (September 2023) with Astro and hosted on a 
 
 ## Status
 
-Content imported from the WordPress export of 23 October 2026 (57 articles in 10 sections, one draft page). The single referenced image is in place: the one image the articles reference is listed in `content-import/images.txt` and will be added from the uploads backup. Logo is the BMT lockup used on bmt.bafta.org.
+Content imported from the WordPress export of 23 October 2026 (57 articles in 10 sections, one draft page). The one image the articles use is in `public/images/`. Logo is the BMT lockup used on bmt.bafta.org. WordPress is no longer the source: articles are edited here, and the one-off importer was removed once the content had moved (it is in the git history).
 
 See [docs/DEPLOY.md](docs/DEPLOY.md) for Cloudflare setup, custom domains and moving accounts, and [docs/LAUNCH.md](docs/LAUNCH.md) for the launch checklist.
 
@@ -25,14 +25,6 @@ npm run dev        # local preview at http://localhost:4321
 npm run build      # static site into dist/ plus the search index
 npm run deploy     # build, then wrangler deploy to Cloudflare
 ```
-
-## Importing from WordPress
-
-```sh
-node scripts/wp-import.mjs path/to/export.xml src/content
-```
-
-The importer writes one Markdown file per published post or page with front matter, `categories.json`, a `redirects.txt` (old `?p=` links and slugs to new paths, to paste into `public/_redirects`) and `images.txt` (every image URL to fetch into `public/images/`).
 
 ## Shared template
 
